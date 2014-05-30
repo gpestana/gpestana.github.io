@@ -1,0 +1,335 @@
+/* move down content*/
+body {
+	//font-family: "Karla",arial,sans-serif;
+	//font-family: "Josefin Sans",arial,sans-serif;
+	font-family: "Lato";
+
+	border-style: solid;
+	border-color: #333333;
+	border-width: 5px;
+}
+
+body a:hover {
+	text-decoration: none;
+	color: #76d04b;
+}
+body a {
+	color: grey;
+}
+body a:visited {
+	color: grey;
+}
+
+
+
+/*bootstrap overrides*/
+.navbar-default {
+	background-color: white;
+	border-color: white;
+}
+
+.navbar-default .navbar-nav > li > a {
+	color: black;
+}
+
+
+
+.container-full {
+	margin: 0 auto;
+	width: 100%;
+}
+
+.img-responsive {
+	width: 100px;
+	height: 100px;
+}
+/*main sections*/
+
+#upper-div {
+	height: 15px;
+	background-color: #333333;
+	
+}
+
+
+
+/*HEADER section*/
+
+#header {
+	background-color: #76d04b;
+	font-family: "Josefin Sans",arial,sans-serif;
+	padding-top: 300px;
+	height: 550px;
+}
+
+#header h1 {
+	font-size: 60px;
+	font-height: 50px;
+}
+
+#header h2 {
+	color: #2E754D;
+}
+
+#nav {
+	//background-color: #76d04b;
+	border-style: none;
+	font-size: 20px;
+	font-weight:50;
+	margin-bottom: 0px;
+}
+
+
+
+/*MAIN section*/
+
+#main {
+	//background-color: #B8BDB6;
+	color: #000;
+	padding-top: 50px;
+	padding-bottom: 100px;
+	font-size: 25px;
+
+}
+
+#main a:link {
+	color:#76d04b;
+}
+
+#main a:visited {
+	color:#76d04b;
+}
+#main a:hover {
+	text-decoration: none;
+	color: #5B8845;
+}
+
+#main img {
+	width: 100%;
+}
+
+
+
+/*PROJECTS section*/
+
+#projects {
+	//background-color: #BABDB8;
+	padding-top: 100px;
+	padding-bottom: 100px;
+	font-size: 20px;
+}
+
+
+#projects img {
+	width: 200px;
+	height: 200px;
+}
+
+
+#project-container {
+	height: 250px;
+	margin-left: auto;
+	margin-right: auto; 
+	//text-align:center;
+	font-size: 20px;
+	padding-bottom: 25px;
+}
+
+#project-container #cool {
+	background-color: 
+}
+
+#project-container:hover {
+	background-color: rgba(118, 208, 75, 0.47);
+}
+
+
+
+/*BLOG section*/
+
+#blog-section {
+	padding-top: 100px;
+	padding-bottom: 100px;
+	font-size: 20px;
+	background-color: #f8f8f8;
+}
+
+#blog-section-posts {
+	padding-top:50px;
+}
+
+#blog-section ul {
+	list-style-type: none;
+	font-size: 20px;
+}
+
+#blog-section li {
+	padding-bottom: 15px;
+}
+
+#blog-section #post-date {
+	font-weight: bold;
+	padding-right: 15px;
+}
+
+#blog-section #post-title a:link {
+	color:black;
+}
+#blog-section #post-title a:visited {
+	color:black;
+}
+#blog-section #post-title a:hover {
+	color: #76d04b;
+}
+
+
+#blog-section #blog-nav p {
+	font-size: 20px;
+	padding-top: 75px;
+	padding-bottom: 20px;
+}
+
+
+/*CONTACTS section*/
+
+#contacts {
+	background-color: #f1f1f1;
+	padding-top: 100px;
+	padding-bottom: 100px;
+	font-size: 30px;
+
+}
+
+#logo-container #logo {
+	height: 300px;
+	margin-left: auto;
+	margin-right: auto; 
+
+	text-align:center;
+	font-size: 200px;
+	font-family: 'socicon';
+
+}
+
+#logo-container #logo:hover {
+		background-color: rgba(118, 208, 75, 0.47);
+} 
+
+
+#logo-container #logo a {
+	color: #333333;
+}
+
+
+#logo-container #text {
+	text-align: center;
+	padding: 5px;
+	font-size: 35px;
+}
+
+#logo {
+	//background-color:#BABDB8;
+	margin: 10px;
+}
+
+
+
+
+
+/*BLOG*/
+#blog {
+	padding-top: 20px;
+}
+
+#blog #content {
+	font-size: 25px;
+	padding-bottom: 50px;
+	padding-top: 100px;
+}
+
+#blog-archive {
+	padding-bottom: 200px;
+}
+
+
+#blog ul {
+	list-style-type: none;
+	font-size: 20px;
+}
+
+#blog li {
+	padding-bottom: 15px;
+}
+
+#blog-archive li a {
+	color: black;
+	font-size: 20px;
+}
+
+#blog-archive li a:hover {
+	color: grey;
+}
+
+#blog #post-date {
+	font-weight: bold;
+	padding-right: 15px;
+}
+
+#blog #post-title {
+}
+
+
+/*FOOTER section*/
+
+footer {
+	color: #f0f0f0;
+	background-color: #333333;
+	padding-top:25px;
+	padding-left: 15px;
+	font-size: 15px;
+}
+
+footer .row {
+	margin: auto;
+	width: 100%;
+}
+
+footer #row-top {
+	padding-bottom: 10px;
+}
+
+footer ul {
+	list-style-type: none;
+	padding-left: 0;
+	font-size: 25px;
+}
+
+footer li {
+	padding-bottom: 5px;
+}
+
+
+footer #foot-left {
+}
+
+footer #foot-center {
+	font-size: 30px;
+}
+
+footer #foot-right {
+	font-size: 15px;
+	padding-top: 150px;
+}
+
+
+footer a {
+	color: grey;
+}
+
+footer a:hover {
+	color: #f1f1f1;
+}
+
+footer a:visited {
+	color: grey;
+}
