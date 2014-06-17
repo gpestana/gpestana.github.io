@@ -1,0 +1,56 @@
+design
+
+blog post
+h3 title
+ 3
+ p intro
+ 2
+ subtitle
+ 0.5
+ 1
+ p
+ 1
+ (...)
+
+
+ blog post horizontal size: 600 px (+- 90 chars)
+ 
+http://modularscale.com/ for scaling text sizes
+
+body
+ line height 1.5
+ sans derif
+ #444
+"Source Sans Pro"
+
+subtitle
+ serif
+ #222
+ "Source Sans Pro" font weight 700
+ -or-
+ crimson text
+
+title
+ line height 1.1
+ serif
+ #222
+ "Source Sans Pro" font weight 700
+ -or-
+
+tecnhical terms and abreviations: 
+ font-variant: small-caps;
+
+
+ @font-face {
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Source Sans Pro"), local("SourceSansPro-Regular"), url("http://themes.googleusercontent.com/static/fonts/sourcesanspro/v7/ODelI1aHBYDBqgeIAH2zlBM0YzuT7MdOe03otPbuUS0.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Crimson Text";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Crimson Text"), local("CrimsonText-Roman"), url("http://themes.googleusercontent.com/static/fonts/crimsontext/v4/3IFMwfRa07i-auYR-B-zNXhCUOGz7vYGh680lGh-uXM.woff") format("woff");
+}
