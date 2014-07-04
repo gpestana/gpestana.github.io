@@ -1,0 +1,7 @@
+<div class ="post">
+<h3 class='title'>title</h3>
+<h4 class='subtitle'>subtile</h4>
+<p class="text-justify">paragraph_1</p> 
+<p class="text-justify">paragraph_2</p> 
+</div>
+

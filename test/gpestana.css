@@ -18,8 +18,14 @@ a.navbar-header h4 {
 	padding-bottom: 10px;
 }
 
+#nav {
+    background-color: white;
+    #padding-bottom:30px;
+}
+
+
 .allPosts {
-	padding-top: 25px;
+	padding-top: 40px;;
 }
 
 .title {
@@ -27,7 +33,7 @@ a.navbar-header h4 {
 	color: #222;
 	padding-bottom: 15px;
 	line-height: 1.1;
-	font-size: 40px;	
+	font-size: 30px;	
 
 }
 
@@ -43,7 +49,7 @@ a.navbar-header h4 {
 	color: #444;
 	padding-top: 12px;
 	line-height: 1.5;	
-	font-size: 24px;	
+	font-size: 20px;	
 
 }
 
@@ -51,14 +57,14 @@ a.navbar-header h4 {
 	font-family: "Source Sans Pro";
 	color: #444;
 	line-height: 1.5;	
-	padding-bottom: 100px;
+	padding-bottom: 80px;
 	font-size: 18px;	
 	
 }
 
 
 .menu {
-	padding-top: 50px;
+	padding-top: 10px;
 }
 
 
@@ -140,4 +146,9 @@ a.list-group-item.active:hover {
 
 #logo {
 	margin: 10px;
+}
+
+footer {
+    font-size: 10px;
+    padding-top:30px;
 }
