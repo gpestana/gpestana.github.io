@@ -1,3 +1,46 @@
-h4 {
-  padding-top: 10px;
+ul {
+  list-style-type: none;
+  padding-left: 0px;
+}
+
+a:link {
+  color: #666666;
+}
+
+/* visited link */
+a:visited {
+  color: #666666;
+}
+
+/* mouse over link */
+a:hover {
+  color: #333333;
+  text-decoration:none;
+}
+
+/* selected link */
+a:active {
+  color: #222222;
+}
+
+#menu {
+  padding-bottom: 20px;
+}
+
+#wrapper {
+  width: 300px;
+}
+
+#section {
+  padding-top: 15px;
+}
+
+li {
+  padding-top:4px;
+}
+
+#footer {
+  padding-top:100px;
+  height: 200px;
+  background-color:#EEEEEE;
 }
