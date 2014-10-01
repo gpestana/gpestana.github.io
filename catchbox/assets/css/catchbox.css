@@ -1,6 +1,8 @@
 /* fonts */
 
 @import url(http://fonts.googleapis.com/css?family=Roboto);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+@import url(http://fonts.googleapis.com/css?family=Nunito:300);
 
 
 body {
@@ -10,6 +12,8 @@ body {
   background-color: #ebebeb;
   
   font-family: Roboto;
+  font-family: Open Sans;
+  font-family: Nunito;
 }
 
 /* colors 
@@ -44,6 +48,8 @@ body {
 .footer {
   background-color:#0b091c;
   min-height: 300px;
+  padding-top: 30px; 
+  color: #ebebeb;
 }
 
 .box {
@@ -52,7 +58,7 @@ body {
 }
 
 .filler {
-  height:200px;
+  height:150px;
 }
 
 /* content */
@@ -116,7 +122,7 @@ body {
   background-color: #ebebeb;
   text-align: center;
 }
-
+G
 #products-bar .header {
   padding-top: 30px;
   padding-bottom: 60px;
@@ -161,5 +167,47 @@ body {
   clear: both;
 }
 
+
+/* contact */
+#map-container {
+  min-height: 500px; 
+  padding-top: 120px;
+  padding-bottom: 30px;  
+  margin-left: auto;
+  margin-right: auto;
+  color: #000;
+  max-width: 720px;
+}
+
+#map-container img {
+  padding-top: 10px;
+}
+
+#contacts {
+  min-height: 420px;
+  background-color: #0b091c;
+  color: #fff;
+}
+
+
+#contacts .header {
+  padding-top: 35px;
+  text-align: center;
+}
+
+#contacts .header p {
+  padding-top: 20px;
+  padding-bottom: 50px;
+  font-size: 17px;
+  
+}
+
+#contacts .box {
+  padding-top: 5px;
+}
+
+
 /* media queries */
+
+
 
