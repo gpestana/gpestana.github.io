@@ -5,6 +5,13 @@
 @import url(http://fonts.googleapis.com/css?family=Nunito:300);
 
 
+/* colors 
+  dark-main-blue: #0b091c
+  smooth-background: #ebebeb
+  palid-orange: #f98032
+*/
+
+
 body {
   width:100%;
   margin: 0px;
@@ -15,14 +22,6 @@ body {
   font-family: Open Sans;
   font-family: Nunito;
 }
-
-/* colors 
-  dark-main-blue: #0b091c
-  smooth-background: #ebebeb
-  palid-orange: #f98032
-*/
-
-
 
 /* header */
 
@@ -35,6 +34,17 @@ body {
   letter-spacing: 1px;
   font-size: 15px;
 }
+
+/* fixes for full responsive */
+.navbar-header {
+  min-height: 80px;
+}
+
+.navbar-collapse.collapse.in li, .navbar-collapse.collapsing li {
+  padding-left:10px;
+  padding-top:10px;
+}
+
 
 .navbar ul li {
   padding-top: 30px;
@@ -167,6 +177,34 @@ G
   clear: both;
 }
 
+/* product */
+
+#main-product {
+  padding-top:80px;
+  color: #000;
+}
+
+.nav-tabs {
+ margin-left: auto; 
+ margin-right: auto;
+ width: 390px;
+ padding-bottom: 30px;
+}
+
+.nav-tabs li.active a {
+  border: 0px;
+  background-color: #0b091c;
+}
+
+.nav-tabs li  a {
+  border: 0px;
+  background-color: #ebebeb;
+  color: #0b091c;
+}
+
+#main-product-content, #product-specs {
+  min-height: 300px;
+}
 
 /* contact */
 #map-container {
