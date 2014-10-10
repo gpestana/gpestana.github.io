@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+      
+    <title>gpestana</title>
+    
+    <link href="../assets/bootstrap.css" rel="stylesheet">
+    <link href="../assets/mine.css" rel="stylesheet">
+
+
+<script src="../assets/jsBrush.js" type="text/javascript"></script>
+
+<link href="http://alexgorbatchev.com/pub/sh/current/styles/shThemeDefault.css" rel="stylesheet" type="text/css" />
+<script src="http://alexgorbatchev.com/pub/sh/current/scripts/shCore.js" type="text/javascript"></script>
+<script src="http://alexgorbatchev.com/pub/sh/current/scripts/shAutoloader.js" type="text/javascript"></script>
+
+
+ </head>
+
+  <body>
+
+<div class="container">
+
+<div class = "written-menu">
+  <ul>
+    <li>home</li>
+    <li>written</li>
+    <li>contacts</li>
+  </ul>
+</div>
+
+<div id = "article">
+<div class="row">
+<div class = "col-md-7">
+<h3>Consensus Manager module for Node.js</h3>
+
+<p>
+In one of my side-project - which uses socket.io - I need to
+reach a consensus amongst users in the same room. There were some initial
+requirements:
+<ul>
+<li> The definition of 'consensus' should be flexible and interchangeable in
+run-time;</li>
+<li> The time to reach the consensus should be tracked;</li>
+<li> The final consensus amongst the clients could possible output some data
+that the server would use;</li>
+</ul>
+</p>
+<p>
+My solution consists in a modular entity - which I pompously called consensus
+manager - that starts the consensus process, receives  and processes the responses from the
+clients and, according to a pre-defined strategy, terminates the protocol when the
+consensus is reached. In addition, the consensus manager keeps track of the time taken for the whole process be concluded and might store data coming from the clients.
+</p>
+<p>
+As an example, let's consider a simple case: In a chat system, there are X peers
+connected to a server at a given time. The server should fire an event when half
+of the peers had communicated how many lines of chat each of them wrote, which
+is stored locally. For simplicity sake, let's also consider that the connection is
+ maintained with socket.io.
+</p>
+<p>
+First, we must implement the consensus strategy, or the logic that defines what a
+'consensus' is, concretely.
+</p>
+
+
+<pre class='brush: js'>
+module.exports = strategy_half
+
+function strategy_half(min_res) {
+  this.min_res    = min_res
+}
+
+strategy_half.prototype.isReady = function(results, time_diff, cb) {
+  if(results.length == this.min_res) {
+    cb(true, results, time_diff)
+  }
+  else cb(false)
+}
+</pre>
+<p>
+The strategy is then passed to the ConsensusManager constructor:
+</p>
+
+<pre class='brush: js'>
+var ConsensusManager = require('consensus-manager'),
+Strategy             = require('... strategy_half.js')
+
+var strategy = new Strategy(min_res)
+var consensus = new ConsensusManager(strategy)
+</pre>
+
+<p>
+Now, the underlying layers should take care of the communication with the peers.
+With a socket.io communication layer, it would be something like
+</p>
+
+<pre class='brush: js'>
+socket.in(roomID).emit('askNumberLines')
+
+
+socket.on('numberLinesResponse', function(nr_lines) {
+  consensus.process(nr_lines)
+})
+</pre>
+
+<p>
+Finally, when the requirements implemented by the strategy are met, a
+'consensus' event is triggered:
+</p>
+
+<pre class='brush: js'>
+consensus.on('consensus', function(output, time_diff) {
+ //half of the peers answered and i) ouput contains their responses, 
+<br>ii) time_diff says how much time did the process take.n
+})
+</pre>
+
+<p>
+If the responses keep coming from peers after the protocol is over, the manager
+will trigger a 'notListening' event.
+</p>
+
+<p>
+This solution is modular and extensible enough to structure and abstract
+simple scenarios of consensus and synchronization between peers, both in remote
+and local domains. The decoupling between the consensus manager and the definition
+of what is a consensus itself does the magic here.
+</p>
+
+<br><br>
+
+Comments: <a href="https://news.ycombinator.com/item?id=8437403">https://news.ycombinator.com/item?id=8437403</a><br>
+Code: <a href="https://github.com/gpestana/consensus-manager">https://github.com/gpestana/consensus-manager</a><br>
+
+
+
+</div>
+</div>
+</div>
+
+<div id="footer"></div>
+
+
+</body>
+</html>
+

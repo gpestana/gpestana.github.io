@@ -1,6 +1,5 @@
 body{
   font-family:"freight-sans-pro","Myriad Pro","Myriad",sans-serif;
-  font-size:14px;
   color:#222222;
 }
 
@@ -29,11 +28,8 @@ a:active {
   color: #222222;
 }
 
-#menu {
-  padding-bottom: 20px;
-}
-
-#wrapper {
+#index-wrapper {
+  font-size:14px;
   width: 300px;
 }
 
@@ -45,8 +41,36 @@ li {
   padding-top:4px;
 }
 
+/* written */
+
+.written-menu {
+  padding: 10px 0 30px 0;
+}
+
+.written-menu ul li {
+  padding-right: 10px;
+  display: inline;
+}
+
+#article {
+  font-size: 15px;
+  line-height: 1.7;
+  text-align: justify;
+}
+
+#article h3 {
+  padding-bottom: 20px; 
+}
+
+#article ul li {
+  padding-left: 10px;
+}
+
+
+
+
+
 #footer {
   padding-top:100px;
   height: 200px;
-  background-color:#EEEEEE;
 }
