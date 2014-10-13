@@ -28,12 +28,14 @@ a:active {
   color: #222222;
 }
 
-#index-wrapper {
+
+#wrapper {
   font-size:14px;
-  width: 300px;
+  padding: 25px 25px 0 100px;
 }
 
 #section {
+  padding-right: 15px;
   padding-top: 15px;
 }
 
@@ -66,7 +68,11 @@ li {
   padding-left: 10px;
 }
 
-
+#code {
+  font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
 
 
 
