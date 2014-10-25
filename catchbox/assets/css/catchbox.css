@@ -80,21 +80,50 @@ body {
   max-width: 900px;
 }
 
+
+
+/*new*/
+
 #banner {
-  height: 600px;
+  background-color: white;
+  background-image: url('../../imgs/header.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 670px;
 }
 
-#banner .temp {
-  padding-top: 330px;
-  text-align: center;
-  color: #000;
+#banner .text {
+  background-color:rgba(0,0,0,0.4);
+  margin-top: 130px; 
+  padding: 5px 0px 20px 30px; 
+  color: #fff;
 }
 
-#banner .temp a {
-  margin-top: 30px;
-  padding: 0px 40px 0px 40px;
-
+#banner img {
+  margin-bottom: 5px;
+  border: solid 1px white;
 }
+
+#banner h2 {
+  font-size: 27px;
+  line-height: 1.2;
+}
+
+#banner h2, a {
+  padding-bottom: 15px;
+}
+
+
+#banner .btn {
+  margin-top: 10px;
+  color: #fff;
+  background-color: #f98032;
+  padding:  0px 35px; 
+}
+
+
+/*!new*/
+
 
 #partners-bar {
   text-align: center;
