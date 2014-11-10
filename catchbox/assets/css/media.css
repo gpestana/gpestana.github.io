@@ -1,0 +1,78 @@
+ /* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) {
+}
+     
+ /* Landscape phone to portrait tablet */
+ @media (max-width: 767px) {
+
+  /* index */
+  #examples-bar .description {
+    width: 300px;
+    margin-left: auto; 
+    margin-right: auto; 
+  }
+  #product-case {
+    padding-left: 30%;
+    padding-bottom: 20px; 
+ }
+  #endorsements .bubble {
+    height: auto;
+  }
+
+  /*products*/
+  #products-bar .description p {
+    width: 400px;
+    padding-left: 0px;
+  }
+  #products-bar #product-case {
+    padding-left: 15%;
+  }
+
+  /*contacts*/
+  #contacts .box {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20%;
+    padding-bottom: 20px;
+  }
+
+}
+     
+ /* Landscape phones and down */
+@media (max-width: 480px) {
+  
+  /* index */
+  #product-case {
+    padding-left: 20%;
+    padding-bottom: 20px; 
+  }
+  #endorsements .bubble {
+    height: auto;
+  }
+  #endorsements img {
+    margin-bottom: 40px;
+  }
+  #featured-bar img {
+    padding-top: 20px;
+  }
+
+
+  /*products*/
+  #products-bar .description p {
+    width: 300px;
+    padding-left: 0px;
+    margin-left: 0px; 
+ }
+  #products-bar #product-case {
+    padding-left: 5%;
+  }
+
+}
+
+@media (max-width: 330px) {
+  /* index */
+  #product-case {
+    padding-left: 10%;
+  }
+
+}
