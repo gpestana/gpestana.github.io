@@ -423,24 +423,6 @@ body {
   padding-bottom: 70px;
 }
 
-#endorsements-bar #text {
-  text-align: center;
-  color: #000;
-}
-
-#endorsements-bar #text p {
-  margin-bottom: 0px;
-}
-#endorsements-bar #text h3 {
-  margin-top: 0px;
-  padding-bottom: 10px;
-}
-
-#endorsements-bar .btn {
-  color: #fff;
-  background-color: #f98032;
-  padding:  0px 15px; 
-}
 /*!new*/
 
 
@@ -602,7 +584,32 @@ body {
 }
 
 
-/* media queries */
 
 
+#blue-stripe {
+  background-color: #00a0c6;
+  text-align: center;
+  padding: 50px;
+}
+#blue-stripe #text {
+  text-align: center;
+  color: #000;
+}
+#blue-stripe #text p {
+  margin-bottom: 0px;
+  color:#fff;
+}
+#blue-stripe #text h2 {
+  margin-top: 10px;
+  padding-bottom: 15px;
+  color:#fff;
+}
+#blue-stripe .btn {
+  background-color: #fff;
+  padding:  0px 30px; 
+  border-radius: 25px;
+}
 
+#blue-stripe .btn h4 {
+  color: #00a0c6;
+}
