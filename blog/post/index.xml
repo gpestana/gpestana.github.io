@@ -2,30 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on gpestana</title>
-    <link>http://blog.gpestana.com/post/</link>
+    <link>http://www.gpestana.com/blog/post/</link>
     <description>Recent content in Posts on gpestana</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 20 Jul 2017 22:22:12 +0300</lastBuildDate>
     
-	<atom:link href="http://blog.gpestana.com/post/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://www.gpestana.com/blog/post/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>kapacitor-unit: unit tests framework for TICKscripts</title>
-      <link>http://blog.gpestana.com/post/kapacitor-unit/</link>
+      <link>http://www.gpestana.com/blog/post/kapacitor-unit/</link>
       <pubDate>Thu, 20 Jul 2017 22:22:12 +0300</pubDate>
       
-      <guid>http://blog.gpestana.com/post/kapacitor-unit/</guid>
+      <guid>http://www.gpestana.com/blog/post/kapacitor-unit/</guid>
       <description>Note: This post discusses ideas for a proof of concept for a unit test framework for Kapacitor&amp;rsquo;s TICKscripts and alerts. If you are not familiar with Kapacitor and the TICK script I really suggest you to go ahead and check InfluxData&amp;rsquo;s website and learn more about it! In short, the TICK stack is a time series data platform that allows you to easily store, analyse and act on time series data at scale.</description>
     </item>
     
     <item>
       <title>consensus manager for JS</title>
-      <link>http://blog.gpestana.com/post/consensus-manager/</link>
+      <link>http://www.gpestana.com/blog/post/consensus-manager/</link>
       <pubDate>Mon, 20 Jul 2015 22:22:12 +0300</pubDate>
       
-      <guid>http://blog.gpestana.com/post/consensus-manager/</guid>
+      <guid>http://www.gpestana.com/blog/post/consensus-manager/</guid>
       <description>In one of my side-project - which uses socket.io - I need to reach a consensus amongst users in the same room. Initial requirements:
  The definition of &amp;lsquo;consensus&amp;rsquo; should be flexible and interchangeable in run-time; The time to reach the consensus should be tracked; The final consensus amongst the clients could possibly output some data that the server may need to use further on;  My solution consists of a modular entity which I pompously called consensus manager.</description>
     </item>
