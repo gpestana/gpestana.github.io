@@ -1,0 +1,136 @@
+
+<!DOCTYPE html>
+<html lang="en-us">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta content="" name="keywords">
+<meta content="consensus manager for JS - gpestana" property="og:title">
+<title>consensus manager for JS | gpestana</title>
+<link rel="stylesheet" href="http://blog.gpestana.com//css/style.css">
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/styles/default.min.css" integrity="sha256-Zd1icfZ72UBmsId/mUcagrmN7IN5Qkrvh75ICHIQVTk=" crossorigin="anonymous" />
+
+
+<section class="section">
+  <div class="container">
+    <nav class="nav">
+      <div class="nav-left">
+        <a class="nav-item" href="http://blog.gpestana.com/"><h1 class="title is-4">gpestana</h1></a>
+      </div>
+      <div class="nav-right">
+        <nav class="nav-item level is-mobile">
+          
+        </nav>
+      </div>
+    </nav>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <h2 class="subtitle is-6">July 20, 2015</h2>
+    <h1 class="title">consensus manager for JS</h1>
+    
+    <div class="content">
+      <p>In one of my side-project - which uses socket.io - I need to reach a consensus amongst users in the same room. Initial
+requirements:</p>
+
+<ul>
+<li>The definition of &lsquo;consensus&rsquo; should be flexible and interchangeable in
+run-time;</li>
+<li>The time to reach the consensus should be tracked;</li>
+<li>The final consensus amongst the clients could possibly output some data
+that the server may need to use further on;</li>
+</ul>
+
+<p>My solution consists of a modular entity which I pompously called <em>consensus
+manager</em>. It is responsible for starting the consensus process and receiving
+and processing the responses from the
+clients. Finally, according to a pre-defined strategy, it puts an end to the protocol when the
+consensus has been reached. In addition, the consensus manager keeps track of the time taken for the whole process to be concluded, as well as stores the data coming from the clients.</p>
+
+<p>The module is available on npm:</p>
+
+<pre><code>npm install consensus-manager
+</code></pre>
+
+<p>As an example, let&rsquo;s consider a simple case: In a chat system, there are <em>X</em> peers
+connected to a server at a given time. The server should fire an event when half
+of the peers had communicated how many lines of chat each of them wrote, which
+is stored locally. Let&rsquo;s also consider that the connection is
+ maintained with socket.io.</p>
+
+<p>First, we must implement the consensus strategy, or the logic that defines what a consensus is:</p>
+
+<pre><code>module.exports = strategy_half
+
+function strategy_half(min_res) {
+  this.min_res    = min_res //where min_res is half of the X room users
+}
+
+strategy_half.prototype.isReady = function(results, time_diff, cb) {
+  if(results.length == this.min_res) {
+    cb(true, results, time_diff)
+  }
+  else cb(false)
+}
+</code></pre>
+
+<p>The strategy is then passed in the consensus manager constructor:</p>
+
+<pre><code>var ConsensusManager = require('consensus-manager'),
+Strategy             = require('... strategy_half.js')
+
+var strategy = new Strategy(min_res)
+var consensus = new ConsensusManager(strategy)
+</code></pre>
+
+<p>The underlying layers should take care of the communication between server and peers.
+Considering a socket.io communication layer, it would be something like this:</p>
+
+<pre><code>socket.in(roomID).emit('askNumberLines')
+
+
+socket.on('numberLinesResponse', function(nr_lines) {
+  consensus.process(nr_lines)
+})
+</code></pre>
+
+<p>Finally, when the requirements implemented by the strategy are met, a
+<em>consensus</em> event is triggered:</p>
+
+<pre><code>consensus.on('consensus', function(output, time_diff) {
+ //half of the peers answered and: 
+ //i) ouput contains their responses, 
+ //ii) time_diff says how much time did the process take.
+})
+</code></pre>
+
+<p>If the responses keep coming from peers after the protocol is over, the manager
+will trigger a <i>notListening</i> event.</p>
+
+<p>This solution is modular and extensible enough to structure and abstract
+simple scenarios of consensus and synchronization between peers, both in remote
+and local domains. The decoupling between the consensus manager and the definition
+of consensus itself is what does the magic here.</p>
+
+<p><a href="https://news.ycombinator.com/item?id=8448693">Discussion</a></p>
+
+<p><a href="https://github.com/gpestana/consensus-manager">Code</a></p>
+
+    </div>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container has-text-centered">
+    <p></p>
+  </div>
+</section>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/highlight.min.js" integrity="sha256-KbfTjB0WZ8vvXngdpJGY3Yp3xKk+tttbqClO11anCIU=" crossorigin="anonymous"></script>
+
+<script>hljs.initHighlightingOnLoad();</script>
+
+

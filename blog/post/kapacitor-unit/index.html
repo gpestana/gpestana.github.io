@@ -1,0 +1,143 @@
+
+<!DOCTYPE html>
+<html lang="en-us">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta content="" name="keywords">
+<meta content="kapacitor-unit: unit tests framework for TICKscripts - gpestana" property="og:title">
+<title>kapacitor-unit: unit tests framework for TICKscripts | gpestana</title>
+<link rel="stylesheet" href="http://blog.gpestana.com//css/style.css">
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/styles/default.min.css" integrity="sha256-Zd1icfZ72UBmsId/mUcagrmN7IN5Qkrvh75ICHIQVTk=" crossorigin="anonymous" />
+
+
+<section class="section">
+  <div class="container">
+    <nav class="nav">
+      <div class="nav-left">
+        <a class="nav-item" href="http://blog.gpestana.com/"><h1 class="title is-4">gpestana</h1></a>
+      </div>
+      <div class="nav-right">
+        <nav class="nav-item level is-mobile">
+          
+        </nav>
+      </div>
+    </nav>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <h2 class="subtitle is-6">July 20, 2017</h2>
+    <h1 class="title">kapacitor-unit: unit tests framework for TICKscripts</h1>
+    
+    <div class="content">
+      
+
+<p><em>Note</em>: This post discusses ideas for a proof of concept for a unit test framework
+for Kapacitor&rsquo;s TICKscripts and alerts.
+If you are not familiar with Kapacitor and the TICK script I really suggest you
+to go ahead and check <a href="https://www.influxdata.com">InfluxData&rsquo;s website</a> and
+learn more about it! In short, the TICK stack is a time series data platform
+that allows you to easily store, analyse and act on time series data at scale.</p>
+
+<p>When you rely heavily on the TICK stack to make sure your systems are up and
+running all the time, the amount of TICKscripts will potentially become harder
+to manage. In addition, every time you need to change the parameters of an
+alert &ndash; which can be quite often &ndash;, a lot of time is spent on making sure that
+the alert works as intended and that the TICKscript is correct.</p>
+
+<p>In this blog post, I&rsquo;ll propose way to test TICKscripts in an automated way.</p>
+
+<h2 id="why">Why?</h2>
+
+<p>1) When you rely heavily on the TICK stack to make sure your systems are up and
+running all the time, the amount of TICKscripts will potentially become harder
+to manage.
+2) When creating new (and complex) TICKscripts, it is hard to test all possible
+cases before getting the script into production. Record and replay features are
+helpful, but still require a lot of manual work and a reliable set of recorded
+data, which might not be easy to get.
+3) In addition, every time you need to change the parameters of an alert &ndash;
+which can be quite often &ndash;, a lot of time is spent on making sure that the
+alert works as intended and that the TICKscript is correct.</p>
+
+<h2 id="the-idea">The idea</h2>
+
+<p>The main goal of kapacitor-unit is to streamline and make it easier to run a
+battery of tests against TICKscripts. Just like any other unit tests, a
+TICKscript should be tested independently and care only about the data input
+and the expected Kapacitor triggered alert as a result.</p>
+
+<p>The tests are defined in a test configuration file:</p>
+
+<pre><code># Test case for alert_weather.tick
+alert_weather:
+  warn_trigger_test:
+    description: &quot;Warning when temperature is higher than 80&quot;
+    data_set:
+      - weather,location=us-midwest temperature=80
+      - weather,location=us-midwest temperature=82
+    expects:
+      - warn: temperature&gt;80 
+
+    crit_trigger_test:
+      description: &quot;Critical when temperature is higher than 84&quot;
+      data_set:
+        - weather,location=us-midwest temperature=80
+        - weather,location=us-midwest temperature=86
+      expects:
+        - crit: temperature&gt;84
+    
+    ok_test:
+      description: &quot;No alert when when temperature is lower than 80&quot;
+      data_set:
+        - weather,location=us-midwest temperature=88
+        - weather,location=us-midwest temperature=80
+      expects:
+        - ok: temperature&lt;80 
+</code></pre>
+
+<p>The configuration file is self descriptive. It must be a valid YAML file and
+each alert&rsquo;s name must be unique.</p>
+
+<p>To install kapacitor-unit run (no quite ready yet though):</p>
+
+<pre><code>go get github.com/gpestana/kapacitor-unit/kapacitor-unit
+</code></pre>
+
+<p>To run the tests, you must provide the configuration file and both influxdb and
+kapacitor addresses. Optionally, you can provide a path for the directory where
+the TICKscripts are. If this path is not provided, kapacitor-unit assumes that
+the TICKscripts are loaded and enabled already.</p>
+
+<p>To run the tests:</p>
+
+<pre><code>kapacitor-unit --kapacitor http://kapacitorlocalhost:9092 -iinfluxdb http://influx.localhost:8086 --scripts ../tickscripts
+</code></pre>
+
+<p>A good practice is to run a disposable Kapacitor and Influxdb for running the
+tests. This can be easily done with docker.</p>
+
+<h2 id="wrap-up">Wrap up</h2>
+
+<p>For now, these are the main ideas behind the kapacitor-unit. The main goal of
+kapacitor-unit is to make it easy and automated to test TICKscripts. For keeping
+up/colaborating/discussing, visit <a href="https://github.com/gpestana/kapacitor-unit">github.com/gpestana/kapacitor-unit</a></p>
+
+    </div>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container has-text-centered">
+    <p></p>
+  </div>
+</section>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/highlight.min.js" integrity="sha256-KbfTjB0WZ8vvXngdpJGY3Yp3xKk+tttbqClO11anCIU=" crossorigin="anonymous"></script>
+
+<script>hljs.initHighlightingOnLoad();</script>
+
+
