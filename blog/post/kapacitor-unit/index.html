@@ -48,9 +48,22 @@ to manage. In addition, every time you need to change the parameters of an
 alert &ndash; which can be quite often &ndash;, a lot of time is spent on making sure that
 the alert works as intended and that the TICKscript is correct.</p>
 
-<p>In this blog post, I&rsquo;ll propose way to test TICKscripts in an automated way.</p>
+<p>When testing a task, you can always define multiple
+<a href="https://docs.influxdata.com/kapacitor/v1.3//introduction/getting_started/#trigger-alert-from-stream-data">recordings</a>
+and replay them to check whether the task behaves as expected or not. Though,
+this approach still has a couple of issues: there is a lot of manual work to
+record and replay the test data and it is not easy to keep the recordings up to
+date with changing TICKscripts.</p>
 
-<h2 id="why">Why?</h2>
+<p>Another problem with manually testing the TICKscripts is the amount of manual
+(or funny scripting) needed to load the tasks, enable, replay recordings, check
+the results, and tear down test databases. All of these actions should be made
+against a non production Influxdb/Kapacitor.</p>
+
+<p>In this blog post, I propose way to test TICKscripts in an automated way, using
+kapacitor-unit.</p>
+
+<h2 id="in-a-nutshell-this-is-why-kapacitor-unit-can-help-you">In a nutshell, this is why kapacitor-unit can help you:</h2>
 
 <p>1) When you rely heavily on the TICK stack to make sure your systems are up and
 running all the time, the amount of TICKscripts will potentially become harder
@@ -61,16 +74,21 @@ helpful, but still require a lot of manual work and a reliable set of recorded
 data, which might not be easy to get.
 3) In addition, every time you need to change the parameters of an alert &ndash;
 which can be quite often &ndash;, a lot of time is spent on making sure that the
-alert works as intended and that the TICKscript is correct.</p>
+alert works as intended and that the TICKscript is correct.
+4) Currently, there is no easy way to run tests over multiple TICKscripts,
+checking the results and provide proper reporting.</p>
 
 <h2 id="the-idea">The idea</h2>
 
 <p>The main goal of kapacitor-unit is to streamline and make it easier to run a
-battery of tests against TICKscripts. Just like any other unit tests, a
-TICKscript should be tested independently and care only about the data input
-and the expected Kapacitor triggered alert as a result.</p>
+battery of tests against TICKscripts. A TICKscript should be tested
+independently. There should be an easy and streamlined way to define the data
+to run in the tests, compare the Kapacitor results with the expected results and
+provide test reporting. All the tests whould against a dedicated Kapacitor.</p>
 
-<p>The tests are defined in a test configuration file:</p>
+<h2 id="how-to-use-it">How to use it</h2>
+
+<p>First, define test definitons in a test configuration file:</p>
 
 <pre><code># Test case for alert_weather.tick
 alert_weather:
@@ -102,29 +120,28 @@ alert_weather:
 <p>The configuration file is self descriptive. It must be a valid YAML file and
 each alert&rsquo;s name must be unique.</p>
 
-<p>To install kapacitor-unit run (no quite ready yet though):</p>
-
-<pre><code>go get github.com/gpestana/kapacitor-unit/kapacitor-unit
-</code></pre>
-
-<p>To run the tests, you must provide the configuration file and both influxdb and
-kapacitor addresses. Optionally, you can provide a path for the directory where
+<p>After installing kapacitor-unit (it will eventually be something
+like <code>go get github.com/gpestana/kapacitor-unit/kapacitor-unit</code>), run the tests
+providing the configuration file and both influxdb and
+kapacitor hosts. Optionally, you can provide a path for the directory where
 the TICKscripts are. If this path is not provided, kapacitor-unit assumes that
 the TICKscripts are loaded and enabled already.</p>
 
 <p>To run the tests:</p>
 
-<pre><code>kapacitor-unit --kapacitor http://kapacitorlocalhost:9092 -iinfluxdb http://influx.localhost:8086 --scripts ../tickscripts
+<pre><code>kapacitor-unit --kapacitor http://localhost:9092 --scripts ../tickscripts
 </code></pre>
 
-<p>A good practice is to run a disposable Kapacitor and Influxdb for running the
-tests. This can be easily done with docker.</p>
+<p>A good practice is to run a disposable Kapacitor for running the taks and load
+the test data. This can be easily done with docker, so a ready-to-use Docker
+configurations is also part of the project.</p>
 
 <h2 id="wrap-up">Wrap up</h2>
 
 <p>For now, these are the main ideas behind the kapacitor-unit. The main goal of
-kapacitor-unit is to make it easy and automated to test TICKscripts. For keeping
-up/colaborating/discussing, visit <a href="https://github.com/gpestana/kapacitor-unit">github.com/gpestana/kapacitor-unit</a></p>
+kapacitor-unit is to make it easy and automated to test TICKscripts.
+To check how kapacitor-unit development is going, check
+<a href="https://github.com/gpestana/kapacitor-unit">github.com/gpestana/kapacitor-unit</a></p>
 
     </div>
   </div>
