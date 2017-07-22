@@ -63,20 +63,23 @@ against a non production Influxdb/Kapacitor.</p>
 <p>In this blog post, I propose way to test TICKscripts in an automated way, using
 kapacitor-unit.</p>
 
-<h2 id="in-a-nutshell-this-is-why-kapacitor-unit-can-help-you">In a nutshell, this is why kapacitor-unit can help you:</h2>
+<h2 id="reasons-for-using-kapacitor-unit">Reasons for using kapacitor-unit:</h2>
 
 <p>1) When you rely heavily on the TICK stack to make sure your systems are up and
 running all the time, the amount of TICKscripts will potentially become harder
-to manage.
-2) When creating new (and complex) TICKscripts, it is hard to test all possible
+to manage.</p>
+
+<p>2) When creating new (and complex) TICKscripts, it is hard to test all possible
 cases before getting the script into production. Record and replay features are
 helpful, but still require a lot of manual work and a reliable set of recorded
-data, which might not be easy to get.
-3) In addition, every time you need to change the parameters of an alert &ndash;
+data, which might not be easy to get.</p>
+
+<p>3) In addition, every time you need to change the parameters of an alert &ndash;
 which can be quite often &ndash;, a lot of time is spent on making sure that the
-alert works as intended and that the TICKscript is correct.
-4) Currently, there is no easy way to run tests over multiple TICKscripts,
-checking the results and provide proper reporting.</p>
+alert works as intended and that the TICKscript is correct.</p>
+
+<p>4) Currently, there is no easy way to run tests over multiple TICKscripts,
+check the results and provide proper reporting.</p>
 
 <h2 id="the-idea">The idea</h2>
 
@@ -129,7 +132,7 @@ the TICKscripts are loaded and enabled already.</p>
 
 <p>To run the tests:</p>
 
-<pre><code>kapacitor-unit --kapacitor http://localhost:9092 --scripts ../tickscripts
+<pre><code>kapacitor-unit --kapacitor http://localhost:9092 --scripts ../tickscripts --conf tests_conf.yaml
 </code></pre>
 
 <p>A good practice is to run a disposable Kapacitor for running the taks and load
