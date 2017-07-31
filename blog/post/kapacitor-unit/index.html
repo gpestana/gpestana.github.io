@@ -35,7 +35,7 @@
     <div class="content">
       
 
-<p><em>Note</em>: This post discusses ideas for a proof of concept for a unit test framework
+<p>This post discusses ideas for a proof of concept for a unit test framework
 for Kapacitor&rsquo;s TICKscripts and alerts.
 If you are not familiar with Kapacitor and the TICK script I really suggest you
 to go ahead and check <a href="https://www.influxdata.com">InfluxData&rsquo;s website</a> and
@@ -94,52 +94,53 @@ provide test reporting. All the tests whould against a dedicated Kapacitor.</p>
 <p>First, define test definitons in a test configuration file:</p>
 
 <pre><code># Test case for alert_weather.tick
-alert_weather:
-  warn_trigger_test:
-    description: &quot;Warning when temperature is higher than 80&quot;
-    data_set:
+tests:
+   # This is the configuration for a test case. The 'name' must be unique in the
+   # same test configuration. 'description' is optional
+  - name: Alert weather:: warning
+    description: Task should trigger Warning when temperature raises about 80 
+
+    # 'task_script' defines the name of the file of the tick script to be loaded
+    # when running the test
+    task_script: alert_weather.tick
+
+    db: weather
+    rp: default 
+
+     # 'data' is an array of data in the line protocol
+    data:
+      - weather,location=us-midwest temperature=75
+      - weather,location=us-midwest temperature=82
+
+    # Alert that should be triggered by Kapacitor when test data is running 
+    # against the task
+    expects: warning
+
+
+  - name: Alert no. 2
+    task_id: alert_weather.tick
+    db: weather
+    rp: default 
+    data:
       - weather,location=us-midwest temperature=80
       - weather,location=us-midwest temperature=82
-    expects:
-      - warn: temperature&gt;80 
-
-    crit_trigger_test:
-      description: &quot;Critical when temperature is higher than 84&quot;
-      data_set:
-        - weather,location=us-midwest temperature=80
-        - weather,location=us-midwest temperature=86
-      expects:
-        - crit: temperature&gt;84
-    
-    ok_test:
-      description: &quot;No alert when when temperature is lower than 80&quot;
-      data_set:
-        - weather,location=us-midwest temperature=88
-        - weather,location=us-midwest temperature=80
-      expects:
-        - ok: temperature&lt;80 
+    expects: warning
 </code></pre>
 
-<p>The configuration file is self descriptive. It must be a valid YAML file and
-each alert&rsquo;s name must be unique.</p>
-
-<p>After installing kapacitor-unit (it will eventually be something
-like <code>go get github.com/gpestana/kapacitor-unit/kapacitor-unit</code>), run the tests
-providing the configuration file and both influxdb and
-kapacitor hosts. Optionally, you can provide a path for the directory where
+<p>After installing kapacitor-unit with the go tooling (<code>go install github.com/gpestana/kapacitor-unit/kapacitor-unit</code>), provide the test configuration file and kapacitor hosts. Optionally, you can provide a path for the directory where
 the TICKscripts are. If this path is not provided, kapacitor-unit assumes that
 the TICKscripts are loaded and enabled already.</p>
 
 <p>To run the tests:</p>
 
-<pre><code>kapacitor-unit --kapacitor http://localhost:9092 --scripts ../tickscripts --conf tests_conf.yaml
+<pre><code>kapacitor-unit -kapacitor http://localhost:9092 -dir ../tickscripts -tests tests_conf.yaml
 </code></pre>
 
 <p>A good practice is to run a disposable Kapacitor for running the taks and load
 the test data. This can be easily done with docker, so a ready-to-use Docker
 configurations is also part of the project.</p>
 
-<h2 id="wrap-up">Wrap up</h2>
+<h2 id="wrapping-up">Wrapping up</h2>
 
 <p>For now, these are the main ideas behind the kapacitor-unit. The main goal of
 kapacitor-unit is to make it easy and automated to test TICKscripts.
