@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en-us">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta content="" name="keywords">
+<meta content="Managing production credentials - gpestana" property="og:title">
+<title>Managing production credentials | gpestana</title>
+<link rel="stylesheet" href="http://www.gpestana.com/blog//css/style.css">
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/styles/default.min.css" integrity="sha256-Zd1icfZ72UBmsId/mUcagrmN7IN5Qkrvh75ICHIQVTk=" crossorigin="anonymous" />
+
+
+<section class="section">
+  <div class="container">
+    <nav class="nav">
+      <div class="nav-left">
+        <a class="nav-item" href="http://www.gpestana.com/blog/"><h1 class="title is-4">gpestana</h1></a>
+      </div>
+      <div class="nav-right">
+        <nav class="nav-item level is-mobile">
+          
+        </nav>
+      </div>
+    </nav>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <h2 class="subtitle is-6">August 27, 2017</h2>
+    <h1 class="title">Managing production credentials</h1>
+    
+    <div class="content">
+      
+
+<p>Every software must deal and manage credentials at some point. I will define credentials in the context of this article as secrets that must be protected at all costs, under risk of seriously compromising the security of production systems. There are several points to have in mind when managing credentials of productions systems:</p>
+
+<p><strong>Credentials storage should be kept secret by encryption and a strong access management.</strong>
+Credentials must never be transported but stored. Never send credentials over email or any other means. Store the credentials and protect them with a strong and auditable access management. Any person or system who wants to access credentials must know where and how to get the credentials from and prove its identity.</p>
+
+<p><strong>Credentials database must be regularly backed up and easily restored.</strong> For obvious reasons. The backup must be explicitly and automatically updated when there is credential revocation.</p>
+
+<p><strong>Credentials revocation should be fast.</strong> This is important to swiftly respond when credentials are compromised.</p>
+
+<p><strong>Credentials must have a single purpose and protect a limited domain.</strong> This means that you should not use the same credential to protect different systems or domains, decreasing the danger when a credential is compromised. It is better to have multiple credentials for different domains and have an easy system to manage credentials than using few master credentials. Putting all eggs in one basket is too risky when it comes to credentials.</p>
+
+<p><strong>Credentials must never, ever, be stored on a general purpose version control systems (VCS).</strong> Even if the VCS is private, it is hard to ensure that in the long run the current and old credentials are not accessible by people who should not. Some forget that ultimately, the VCS never forget and it&rsquo;s easily searchable. It is obvious that you should be extra careful with pushing credentials upstream to public repositories, but still we witness a bunch of credentials being compromised everyday in GitHub. [show examples].</p>
+
+<h2 id="in-practice">In practice</h2>
+
+<p>Although it may seem complex to setup a credential management system which respects all the principles mentioned above, there are open source projects which will make our life easier. <a href="https://www.consul.io/">Consul</a>, the configuration management service by Hashicorp can be easily deployed as a credential management system which respects all the principles mentioned. In another post we’ll see how to use Consul for storing production credentials in a secure and usable way.</p>
+
+    </div>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container has-text-centered">
+    <p></p>
+  </div>
+</section>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/highlight.min.js" integrity="sha256-KbfTjB0WZ8vvXngdpJGY3Yp3xKk+tttbqClO11anCIU=" crossorigin="anonymous"></script>
+
+<script>hljs.initHighlightingOnLoad();</script>
+
+
