@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Home on gpestana</title>
+    <link>https://gpestana.com/</link>
+    <description>Recent content in Home on gpestana</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 20 Aug 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://gpestana.com/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Managing credentials in production</title>
+      <link>https://gpestana.com/blog/managing-production-credentials/</link>
+      <pubDate>Sun, 20 Aug 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://gpestana.com/blog/managing-production-credentials/</guid>
+      <description>Every software must deal and manage credentials at some point. I will define credentials in the context of this article as secrets that must be protected at all costs, under risk of seriously compromising the security of production systems. There are several points to have in mind when managing credentials of productions systems:
+Credentials storage should be kept secret by encryption and a strong access management. Credentials must never be transported but stored.</description>
+    </item>
+    
+    <item>
+      <title>kapacitor-unit: unit tests framework for TICKscripts</title>
+      <link>https://gpestana.com/blog/kapacitor-unit/</link>
+      <pubDate>Mon, 23 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://gpestana.com/blog/kapacitor-unit/</guid>
+      <description>This post discusses ideas for a proof of concept for a unit test framework for Kapacitor&amp;rsquo;s TICKscripts and alerts. If you are not familiar with Kapacitor and the TICK script I really suggest you to go ahead and check InfluxData&amp;rsquo;s website and learn more about it! In short, the TICK stack is a time series data platform that allows you to easily store, analyse and act on time series data at scale.</description>
+    </item>
+    
+    <item>
+      <title>Consensus manager for JS</title>
+      <link>https://gpestana.com/blog/managing-production-credentials/</link>
+      <pubDate>Fri, 10 Jul 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://gpestana.com/blog/managing-production-credentials/</guid>
+      <description>In one of my side-project - which uses socket.io - I need to reach a consensus amongst users in the same room. Initial requirements:
+ The definition of &amp;lsquo;consensus&amp;rsquo; should be flexible and interchangeable in run-time; The time to reach the consensus should be tracked; The final consensus amongst the clients could possibly output some data that the server may need to use further on;  My solution consists of a modular entity which I pompously called consensus manager.</description>
+    </item>
+    
+  </channel>
+</rss>

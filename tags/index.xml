@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on gpestana</title>
+    <link>https://gpestana.com/tags/</link>
+    <description>Recent content in Tags on gpestana</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 20 Aug 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://gpestana.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Best practices</title>
+      <link>https://gpestana.com/tags/best-practices/</link>
+      <pubDate>Sun, 20 Aug 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://gpestana.com/tags/best-practices/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Code</title>
+      <link>https://gpestana.com/tags/code/</link>
+      <pubDate>Mon, 23 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://gpestana.com/tags/code/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Consensus</title>
+      <link>https://gpestana.com/tags/consensus/</link>
+      <pubDate>Fri, 10 Jul 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://gpestana.com/tags/consensus/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Devops</title>
+      <link>https://gpestana.com/tags/devops/</link>
+      <pubDate>Sun, 20 Aug 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://gpestana.com/tags/devops/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Kapacitor-unit</title>
+      <link>https://gpestana.com/tags/kapacitor-unit/</link>
+      <pubDate>Mon, 23 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://gpestana.com/tags/kapacitor-unit/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
