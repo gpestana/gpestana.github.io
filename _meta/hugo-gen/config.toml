@@ -26,8 +26,8 @@ footnotereturnlinkcontents = "↩"
 #    weight = 2
 
 [[menu.main]]
-    name = "publications & talks"
-    url = "/pubs/"
+    name = "talks"
+    url = "/talks/"
     weight = 3
 
 [[menu.main]]

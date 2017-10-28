@@ -8,9 +8,8 @@ slug: data-microservices
 draft: false
 ---
 
-**>** This post is part of the series "The Zen of Data Systems" which explores how to build scalable and robust data systems. Most of the ideas and best practices described in this series were learned while implementing and maintaining a large scale data pipeline at F-Secure for the [Rapid Detection Service](https://www.f-secure.com/en/web/business_global/rapid-detection-service). You can find more posts of this series in this blog or all series content in [Gitbook](https://www.gitbook.com/@gpestana).
+**>** *This post is part of the series "The Zen of Data Systems" which explores how to build scalable and robust data systems. Most of the ideas and best practices described in this series were learned while implementing and maintaining a large scale data pipeline at F-Secure for the [Rapid Detection Service](https://www.f-secure.com/en/web/business_global/rapid-detection-service). You can find more posts of this series in this blog or all series content in [Gitbook](https://www.gitbook.com/@gpestana).*
 
-<br>
 <br>
 
 The whole idea of microservices makes a lot of sense on a highly scalable data pipeline. Using small decoupled services is a sound strategy to build resilient and cost effective systems. When individual services are designed to be nimble and operate as individual nodes, and the service orchestration is on point, the data pipeline will become resilient to unexpected service fails and easy to scale depending on the load.
@@ -28,7 +27,6 @@ Nanoservices are designed so small that the communication overhead and complexit
 
 Takeaway: Design your system as a set of decoupled services. However, be mindful of the overhead introduced by communication and maintenance of multiple services when designing your system. If the communication and sync overhead is too high, agglutinate nanoservices into a single microservice. Avoid nanoservices.
 
-<br>
 <br>
 
 **[1]** scaling in/out (or horizontally) means scaling the services by adding or removing nodes to the system. On the other hand, scaling up/down (or vertically) means scaling the system by increasing or decreasing the resources of nodes.
