@@ -2,7 +2,7 @@
 title: Home
 ---
 
-[<img src="https://static1.squarespace.com/static/51b3dc8ee4b051b96ceb10de/t/5578521ae4b0ef891200c593/1433948699416/?format=750w" style="max-width:300px;min-width:200px;float:right;" alt="Github repo" />](https://github.com/goodroot/hugo-classic)
+[<img src="https://www.gpestana.com/hackerman.jpg" style="max-width:300px;min-width:200px;float:right;" alt="Github repo" />](https://github.com/gpestana/)
 
 # the world is eating software
 
