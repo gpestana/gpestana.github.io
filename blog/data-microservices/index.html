@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Do microservices (and avoid nanoservices) | gpestana</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/fonts.css" />
+
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-50045633-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+       function gtag(){dataLayer.push(arguments);}
+       gtag('js', new Date());
+       gtag('config', 'UA-50045633-1');
+     </script>
+
+  <header>
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/atom-one-light.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <nav>
+    <ul>
+      
+      
+      <li class="pull-left ">
+        <a href="https://gpestana.com">gpestana</a>
+      </li>
+      
+      
+      <li class="pull-left ">
+        <a href="/project/">projects</a>
+      </li>
+      
+      
+      <li class="pull-left ">
+        <a href="/pubs/">publications &amp; talks</a>
+      </li>
+      
+      
+      <li class="pull-left ">
+        <a href="https://www.gpestana.com/cv.pdf">cv</a>
+      </li>
+      
+
+      
+      
+      <li class="pull-right">
+        <a href="/index.xml">blog/subscribe</a>
+      </li>
+      
+      
+      <li class="pull-right">
+        <a href="/tags/">blog/tags</a>
+      </li>
+      
+
+    </ul>
+  </nav>
+</header>
+
+
+</head>
+
+  <body>
+    <br/>
+
+<div class="article-meta">
+<h1><span class="title">Do microservices (and avoid nanoservices)</span></h1>
+
+<p class="terms">
+  
+  
+  
+  
+  Tags: <a href="/tags/data-pipeline">data pipeline</a> <a href="/tags/best-practices">best practices</a> 
+  
+  
+</p>
+</div>
+
+
+
+<main>
+<p><strong>&gt;</strong> This post is part of the series &ldquo;The Zen of Data Systems&rdquo; which explores how to build scalable and robust data systems. Most of the ideas and best practices described in this series were learned while implementing and maintaining a large scale data pipeline at F-Secure for the <a href="https://www.f-secure.com/en/web/business_global/rapid-detection-service">Rapid Detection Service</a>. You can find more posts of this series in this blog or all series content in <a href="https://www.gitbook.com/@gpestana">Gitbook</a>.</p>
+
+<p><br>
+<br></p>
+
+<p>The whole idea of microservices makes a lot of sense on a highly scalable data pipeline. Using small decoupled services is a sound strategy to build resilient and cost effective systems. When individual services are designed to be nimble and operate as individual nodes, and the service orchestration is on point, the data pipeline will become resilient to unexpected service fails and easy to scale depending on the load.</p>
+
+<p>Decoupled microservices are easier to orchestrate and scaling in/out <em>[1]</em> is easier to automate. Having the flexibility to bring services up and down depending on the system load or service malfunction has the potential to make the overall system robust, fail proof and cost effective.</p>
+
+<p>This said the first lesson is that a scalable, robust and cost effective data pipeline must follow a microservice architecture.</p>
+
+<p>But - surprise, surprise! -  there are tradeoffs to consider. Services cannot assume any other service to be running besides itself. From an individual perspective, the service consumes data (if available) from some buffer, processes that data and writes the results to another buffer. Message queue services are a great fit for this case and are the nuts and bolts of the decoupling of any microservice architecture. Maintaining a messaging queue service adds some overhead: more resources, maintenance, scalability issues, just to give some examples. Writing and reading from queues needs more time and resources than intra/inter process communication within a single node.</p>
+
+<p>The complexity (and overhead) of the system increases proportionally with the number of different services running. Each service needs to consume/publish data from queues, with the associated messaging overhead. Each service needs to publish its own metrics, each service needs to be maintained. And so on. Be careful when defining the boundaries of the services and aim at building a microservice system, not a nanoservices system.</p>
+
+<p>Nanoservices are designed so small that the communication overhead and complexity of the system increase disproportionately to the advantages of having the service decoupled. The logical step is to agglutinate two or more nanoservices together under a single service. While microservices are the basis for a well designed data pipeline, nanoservices will waste resources and increase system complexity unnecessarily. This is a crucial idea to have in mind when designing new features for the pipeline and deciding the service’s boundaries.</p>
+
+<p>Takeaway: Design your system as a set of decoupled services. However, be mindful of the overhead introduced by communication and maintenance of multiple services when designing your system. If the communication and sync overhead is too high, agglutinate nanoservices into a single microservice. Avoid nanoservices.</p>
+
+<p><br>
+<br></p>
+
+<p><strong>[1]</strong> scaling in/out (or horizontally) means scaling the services by adding or removing nodes to the system. On the other hand, scaling up/down (or vertically) means scaling the system by increasing or decreasing the resources of nodes.</p>
+
+</main>
+
+    <footer>
+      
+<script async src="//yihui.name/js/center-img.js"></script>
+
+      
+      <hr/>
+      <a href="https://github.com/gpestana">Github</a> | <a href="https://twitter.com/gpestana">Twitter</a>
+      
+    </footer>
+  </body>
+</html>
+

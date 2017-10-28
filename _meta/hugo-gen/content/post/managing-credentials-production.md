@@ -1,90 +1,14 @@
-<!DOCTYPE html>
-<html lang="en-us">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Managing credentials in production | gpestana</title>
-    <link rel="stylesheet" href="/css/style.css" />
-    <link rel="stylesheet" href="/css/fonts.css" />
-
-    
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-50045633-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-       function gtag(){dataLayer.push(arguments);}
-       gtag('js', new Date());
-       gtag('config', 'UA-50045633-1');
-     </script>
-
-  <header>
-
-  
-  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/atom-one-light.min.css">
-  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-  <script>hljs.initHighlightingOnLoad();</script>
-  <nav>
-    <ul>
-      
-      
-      <li class="pull-left ">
-        <a href="https://gpestana.com">gpestana</a>
-      </li>
-      
-      
-      <li class="pull-left ">
-        <a href="/project/">projects</a>
-      </li>
-      
-      
-      <li class="pull-left ">
-        <a href="/pubs/">publications &amp; talks</a>
-      </li>
-      
-      
-      <li class="pull-left ">
-        <a href="https://www.gpestana.com/cv.pdf">cv</a>
-      </li>
-      
-
-      
-      
-      <li class="pull-right">
-        <a href="/index.xml">blog/subscribe</a>
-      </li>
-      
-      
-      <li class="pull-right">
-        <a href="/tags/">blog/tags</a>
-      </li>
-      
-
-    </ul>
-  </nav>
-</header>
+---
+title: "Managing credentials in production"
+date: '2017-08-20'
+tags:
+  - devops
+  - best practices
+slug: managing-production-credentials
+draft: false
+---
 
 
-</head>
-
-  <body>
-    <br/>
-
-<div class="article-meta">
-<h1><span class="title">Managing credentials in production</span></h1>
-
-<p class="terms">
-  
-  
-  
-  
-  Tags: <a href="/tags/devops">devops</a> <a href="/tags/best-practices">best practices</a> 
-  
-  
-</p>
-</div>
-
-
-
-<main>
 <p>Every software must deal and manage credentials at some point. I will define credentials in the context of this article as secrets that must be protected at all costs, under risk of seriously compromising the security of production systems. There are several points to have in mind when managing credentials of productions systems:</p>
 
 <p><strong>Credentials storage should be kept secret by encryption and a strong access management.</strong>
@@ -103,36 +27,3 @@ Credentials must never be transported but stored. Never send credentials over em
 <p>Although it may seem complex to setup a credential management system which respects all the principles mentioned above, there are open source projects which will make our life easier. <a href="https://www.consul.io/">Consul</a> and <a href="https://vaultproject.io">Vault</a> by Hashicorp can be easily deployed as part of a credential management system which respects all the principles mentioned. In another post we’ll see how store and manage production credentials in a secure and usable way.</p>
 
 <p><a href="https://news.ycombinator.com/item?id=15109637">Comments and discussion</a></p>
-
-</main>
-
-    <footer>
-      
-<script async src="//yihui.name/js/center-img.js"></script>
-
-      
-      <hr/>
-      <a href="https://github.com/gpestana">Github</a> | <a href="https://twitter.com/gpestana">Twitter</a>
-      
-    </footer>
-  </body>
-</html>
-
-both in remote
-and local domains. The decoupling between the consensus manager and the definition
-of consensus itself is what does the magic here.</p>
-
-</main>
-
-    <footer>
-      
-<script async src="//yihui.name/js/center-img.js"></script>
-
-      
-      <hr/>
-      <a href="https://github.com/gpestana">Github</a> | <a href="https://twitter.com/gpestana">Twitter</a>
-      
-    </footer>
-  </body>
-</html>
-

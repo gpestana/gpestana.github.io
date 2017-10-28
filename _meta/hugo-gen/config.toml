@@ -1,0 +1,49 @@
+baseurl = "https://gpestana.com"
+languageCode = "en-us"
+title = "gpestana"
+theme = "hugo-classic"
+googleAnalytics = "ABCD"
+ignoreFiles = ["\\.Rmd$", "_files$", "_cache$"]
+preserveTaxonomyNames = true
+footnotereturnlinkcontents = "↩"
+
+[permalinks]
+    post = "/blog/:slug/"
+
+[params]
+    description = "personal page and blog of Gonçalo Pestana (gpestana)"
+    footer = "[Github](https://github.com/gpestana) | [Twitter](https://twitter.com/gpestana)"
+
+
+[[menu.main]]
+    name = "projects"
+    url = "/project/"
+    weight = 1
+
+#[[menu.main]]
+#    name = "books"
+#    url = "/books/"
+#    weight = 2
+
+[[menu.main]]
+    name = "publications & talks"
+    url = "/pubs/"
+    weight = 3
+
+[[menu.main]]
+    name = "CV"
+    url = "https://www.gpestana.com/cv.pdf"
+    weight = 4
+
+
+
+[[menu.feed]]
+    name = "blog/subscribe"
+    url = "/index.xml"
+    weight = 1
+
+[[menu.feed]]
+    name = "blog/tags"
+    url = "/tags/"
+    weight = 2
+
