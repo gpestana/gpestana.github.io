@@ -63,10 +63,6 @@
   </url>
   
   <url>
-    <loc>https://gpestana.com/books/</loc>
-  </url>
-  
-  <url>
     <loc>https://gpestana.com/tags/kapacitor-unit/</loc>
     <lastmod>2017-01-23T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -79,17 +75,21 @@
   </url>
   
   <url>
-    <loc>https://gpestana.com/talks/</loc>
-  </url>
-  
-  <url>
     <loc>https://gpestana.com/tags/</loc>
     <lastmod>2017-10-28T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
+    <loc>https://gpestana.com/books/</loc>
+  </url>
+  
+  <url>
     <loc>https://gpestana.com/project/</loc>
+  </url>
+  
+  <url>
+    <loc>https://gpestana.com/talks/</loc>
   </url>
   
 </urlset>

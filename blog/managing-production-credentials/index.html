@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Managing credentials in production | gpestana</title>
+    <title>Consensus manager for JS | gpestana</title>
     <link rel="stylesheet" href="/css/style.css" />
     <link rel="stylesheet" href="/css/fonts.css" />
 
@@ -33,6 +33,11 @@
       
       <li class="pull-left ">
         <a href="/project/">projects</a>
+      </li>
+      
+      
+      <li class="pull-left ">
+        <a href="/books/">books</a>
       </li>
       
       
@@ -69,14 +74,14 @@
     <br/>
 
 <div class="article-meta">
-<h1><span class="title">Managing credentials in production</span></h1>
+<h1><span class="title">Consensus manager for JS</span></h1>
 
 <p class="terms">
   
   
   
   
-  Tags: <a href="/tags/devops">devops</a> <a href="/tags/best-practices">best practices</a> 
+  Tags: <a href="/tags/consensus">consensus</a> <a href="/tags/code">code</a> 
   
   
 </p>
@@ -85,40 +90,85 @@
 
 
 <main>
-<p>Every software must deal and manage credentials at some point. I will define credentials in the context of this article as secrets that must be protected at all costs, under risk of seriously compromising the security of production systems. There are several points to have in mind when managing credentials of productions systems:</p>
+<p>In one of my side-project - which uses socket.io - I need to reach a consensus amongst users in the same room. Initial
+requirements:</p>
 
-<p><strong>Credentials storage should be kept secret by encryption and a strong access management.</strong>
-Credentials must never be transported but stored. Never send credentials over email or any other means. Store the credentials and protect them with a strong and auditable access management. Any person or system who wants to access credentials must know where and how to get the credentials from and prove its identity.</p>
+<ul>
+<li>The definition of &lsquo;consensus&rsquo; should be flexible and interchangeable in
+run-time;</li>
+<li>The time to reach the consensus should be tracked;</li>
+<li>The final consensus amongst the clients could possibly output some data
+that the server may need to use further on;</li>
+</ul>
 
-<p><strong>Credentials database must be regularly backed up and easily restored.</strong> For obvious reasons. The backup must be explicitly and automatically updated when there is credential revocation.</p>
+<p>My solution consists of a modular entity which I pompously called <em>consensus
+manager</em>. It is responsible for starting the consensus process and receiving
+and processing the responses from the
+clients. Finally, according to a pre-defined strategy, it puts an end to the protocol when the
+consensus has been reached. In addition, the consensus manager keeps track of the time taken for the whole process to be concluded, as well as stores the data coming from the clients.</p>
 
-<p><strong>Credentials revocation should be fast.</strong> This is important to swiftly respond when credentials are compromised.</p>
+<p>The module is available on npm:</p>
 
-<p><strong>Credentials must have a single purpose and protect a limited domain.</strong> This means that you should not use the same credential to protect different systems or domains, decreasing the danger when a credential is compromised. It is better to have multiple credentials for different domains and have an easy system to manage credentials than using few master credentials. Putting all eggs in one basket is too risky when it comes to credentials.</p>
+<pre><code>npm install consensus-manager
+</code></pre>
 
-<p><strong>Credentials must never, ever, be stored on a general purpose version control systems (VCS).</strong> Even if the VCS is private, it is hard to ensure that in the long run the current and old credentials are not accessible by people who should not. Some forget that ultimately, the VCS never forget and it&rsquo;s easily searchable. It is obvious that you should be extra careful with pushing credentials upstream to public repositories, but still we witness a bunch of credentials being compromised everyday in GitHub.</p>
+<p>As an example, let&rsquo;s consider a simple case: In a chat system, there are <em>X</em> peers
+connected to a server at a given time. The server should fire an event when half
+of the peers had communicated how many lines of chat each of them wrote, which
+is stored locally. Let&rsquo;s also consider that the connection is
+ maintained with socket.io.</p>
 
-<h2 id="in-practice">In practice</h2>
+<p>First, we must implement the consensus strategy, or the logic that defines what a consensus is:</p>
 
-<p>Although it may seem complex to setup a credential management system which respects all the principles mentioned above, there are open source projects which will make our life easier. <a href="https://www.consul.io/">Consul</a> and <a href="https://vaultproject.io">Vault</a> by Hashicorp can be easily deployed as part of a credential management system which respects all the principles mentioned. In another post we’ll see how store and manage production credentials in a secure and usable way.</p>
+<pre><code>module.exports = strategy_half
 
-<p><a href="https://news.ycombinator.com/item?id=15109637">Comments and discussion</a></p>
+function strategy_half(min_res) {
+  this.min_res    = min_res //where min_res is half of the X room users
+}
 
-</main>
+strategy_half.prototype.isReady = function(results, time_diff, cb) {
+  if(results.length == this.min_res) {
+    cb(true, results, time_diff)
+  }
+  else cb(false)
+}
+</code></pre>
 
-    <footer>
-      
-<script async src="//yihui.name/js/center-img.js"></script>
+<p>The strategy is then passed in the consensus manager constructor:</p>
 
-      
-      <hr/>
-      <a href="https://github.com/gpestana">Github</a> | <a href="https://twitter.com/gpestana">Twitter</a>
-      
-    </footer>
-  </body>
-</html>
+<pre><code>var ConsensusManager = require('consensus-manager'),
+Strategy             = require('... strategy_half.js')
 
-both in remote
+var strategy = new Strategy(min_res)
+var consensus = new ConsensusManager(strategy)
+</code></pre>
+
+<p>The underlying layers should take care of the communication between server and peers.
+Considering a socket.io communication layer, it would be something like this:</p>
+
+<pre><code>socket.in(roomID).emit('askNumberLines')
+
+
+socket.on('numberLinesResponse', function(nr_lines) {
+  consensus.process(nr_lines)
+})
+</code></pre>
+
+<p>Finally, when the requirements implemented by the strategy are met, a
+<em>consensus</em> event is triggered:</p>
+
+<pre><code>consensus.on('consensus', function(output, time_diff) {
+ //half of the peers answered and: 
+ //i) ouput contains their responses, 
+ //ii) time_diff says how much time did the process take.
+})
+</code></pre>
+
+<p>If the responses keep coming from peers after the protocol is over, the manager
+will trigger a <i>notListening</i> event.</p>
+
+<p>This solution is modular and extensible enough to structure and abstract
+simple scenarios of consensus and synchronization between peers, both in remote
 and local domains. The decoupling between the consensus manager and the definition
 of consensus itself is what does the magic here.</p>
 

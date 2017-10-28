@@ -20,10 +20,10 @@ footnotereturnlinkcontents = "↩"
     url = "/project/"
     weight = 1
 
-#[[menu.main]]
-#    name = "books"
-#    url = "/books/"
-#    weight = 2
+[[menu.main]]
+    name = "books"
+    url = "/books/"
+    weight = 2
 
 [[menu.main]]
     name = "talks"

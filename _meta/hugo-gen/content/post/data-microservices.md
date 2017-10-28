@@ -8,7 +8,7 @@ slug: data-microservices
 draft: false
 ---
 
-**>** *This post is part of the series "The Zen of Data Systems" which explores how to build scalable and robust data systems. Most of the ideas and best practices described in this series were learned while implementing and maintaining a large scale data pipeline at F-Secure for the [Rapid Detection Service](https://www.f-secure.com/en/web/business_global/rapid-detection-service). You can find more posts of this series in this blog or all series content in [Gitbook](https://www.gitbook.com/@gpestana).*
+**>** *This post is part of the series "The Zen of Data Pipelines" which explores how to build scalable and robust data systems. Most of the ideas and best practices described in this series were learned while implementing and maintaining a large scale data pipeline at F-Secure for the [Rapid Detection Service](https://www.f-secure.com/en/web/business_global/rapid-detection-service). You can find more posts of this series in this blog or all series content in [Gitbook](https://www.gitbook.com/@gpestana).*
 
 <br>
 
