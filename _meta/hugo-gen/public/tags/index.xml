@@ -6,7 +6,7 @@
     <description>Recent content in Tags on gpestana</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 20 Aug 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 28 Oct 2017 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://gpestana.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,7 +14,7 @@
     <item>
       <title>Best practices</title>
       <link>https://gpestana.com/tags/best-practices/</link>
-      <pubDate>Sun, 20 Aug 2017 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 28 Oct 2017 00:00:00 +0000</pubDate>
       
       <guid>https://gpestana.com/tags/best-practices/</guid>
       <description></description>
@@ -35,6 +35,15 @@
       <pubDate>Fri, 10 Jul 2015 00:00:00 +0000</pubDate>
       
       <guid>https://gpestana.com/tags/consensus/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Data pipeline</title>
+      <link>https://gpestana.com/tags/data-pipeline/</link>
+      <pubDate>Sat, 28 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://gpestana.com/tags/data-pipeline/</guid>
       <description></description>
     </item>
     
