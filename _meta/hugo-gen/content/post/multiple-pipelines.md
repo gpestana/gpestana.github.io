@@ -2,8 +2,8 @@
 title: "Why have one pipeline when you can have multiple?"
 date: '2017-11-10'
 tags:
-  - data pipeline
-  - best practices
+  - data-pipeline
+  - best-practices
 slug: multiple-pipelines
 draft: false
 ---

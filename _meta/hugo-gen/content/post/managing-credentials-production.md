@@ -3,7 +3,7 @@ title: "Managing credentials in production"
 date: '2017-08-20'
 tags:
   - devops
-  - best practices
+  - best-practices
 slug: managing-production-credentials
 draft: false
 ---

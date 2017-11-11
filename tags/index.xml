@@ -12,7 +12,7 @@
     
     
     <item>
-      <title>Best practices</title>
+      <title>Best-practices</title>
       <link>https://gpestana.com/tags/best-practices/</link>
       <pubDate>Fri, 10 Nov 2017 00:00:00 +0000</pubDate>
       
@@ -39,7 +39,7 @@
     </item>
     
     <item>
-      <title>Data pipeline</title>
+      <title>Data-pipeline</title>
       <link>https://gpestana.com/tags/data-pipeline/</link>
       <pubDate>Fri, 10 Nov 2017 00:00:00 +0000</pubDate>
       
@@ -57,11 +57,29 @@
     </item>
     
     <item>
+      <title>Ethics</title>
+      <link>https://gpestana.com/tags/ethics/</link>
+      <pubDate>Sat, 11 Nov 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://gpestana.com/tags/ethics/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Kapacitor-unit</title>
       <link>https://gpestana.com/tags/kapacitor-unit/</link>
       <pubDate>Mon, 23 Jan 2017 00:00:00 +0000</pubDate>
       
       <guid>https://gpestana.com/tags/kapacitor-unit/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Social-network</title>
+      <link>https://gpestana.com/tags/social-network/</link>
+      <pubDate>Sat, 11 Nov 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://gpestana.com/tags/social-network/</guid>
       <description></description>
     </item>
     

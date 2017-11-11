@@ -2,7 +2,7 @@
 title: Home
 ---
 
-[<img src="https://www.gpestana.com/hackerman.jpg" style="max-width:40%;min-width:10%;float:right;" alt="Github repo" />](https://github.com/gpestana/)
+[<img src="https://www.gpestana.com/static/hackerman.jpg" style="max-width:40%;min-width:10%;float:right;" alt="Github repo" />](https://github.com/gpestana/)
 
 # the world is eating software
 

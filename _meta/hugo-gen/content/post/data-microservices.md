@@ -2,8 +2,8 @@
 title: "Do microservices (and avoid nanoservices)"
 date: '2017-10-28'
 tags:
-  - data pipeline
-  - best practices
+  - data-pipeline
+  - best-practices
 slug: data-microservices
 draft: false
 ---
