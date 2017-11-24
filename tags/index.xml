@@ -6,7 +6,7 @@
     <description>Recent content in Tags on gpestana</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 10 Nov 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 23 Nov 2017 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://gpestana.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,7 +14,7 @@
     <item>
       <title>Best-practices</title>
       <link>https://gpestana.com/tags/best-practices/</link>
-      <pubDate>Fri, 10 Nov 2017 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 23 Nov 2017 00:00:00 +0000</pubDate>
       
       <guid>https://gpestana.com/tags/best-practices/</guid>
       <description></description>
@@ -41,7 +41,7 @@
     <item>
       <title>Data-pipeline</title>
       <link>https://gpestana.com/tags/data-pipeline/</link>
-      <pubDate>Fri, 10 Nov 2017 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 23 Nov 2017 00:00:00 +0000</pubDate>
       
       <guid>https://gpestana.com/tags/data-pipeline/</guid>
       <description></description>
@@ -71,6 +71,15 @@
       <pubDate>Mon, 23 Jan 2017 00:00:00 +0000</pubDate>
       
       <guid>https://gpestana.com/tags/kapacitor-unit/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Microservices</title>
+      <link>https://gpestana.com/tags/microservices/</link>
+      <pubDate>Thu, 23 Nov 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://gpestana.com/tags/microservices/</guid>
       <description></description>
     </item>
     
