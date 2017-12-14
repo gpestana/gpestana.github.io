@@ -22,13 +22,18 @@ at silicion valley as the epytome of entreprenurial adventurers and $$$ to a
 mainstream scene where corporations and sellers of snake oil with no content
 whatsoever flock to pitch their pseudo-innovative ideas and where everyone feel
 the urge to get inspired from talks about how we all can - and must - change the
-world around us. From underground to overhyped.
-
-Exactly because of that, I've refrained myself from attending anymore the
+world around us. From underground to overhyped. Because of all this,  I've 
+refrained myself from attending anymore SLUSH
 conference since last year (I still go to the parties, though, those are always
-fun). At lunch time, when  browsing through my Twitter, I couldn't help 
-noticing the sheer amount of tweets about SLUSH, as expected. The over-hyped 
-does not make me feel FOMO, so I was ok. But then I saw this tweet:
+fun). 
+
+At lunch time, when browsing through my Twitter, I couldn't help but to notice
+ the sheer amount of tweets about SLUSH, as expected. Skimming through the #SLUSH17 
+tweets, this particular one caught my eye:
+
+![Tweet challenge](https://www.gpestana.com/static/slush/tweet_badge.jpg)
+
+
 
 
 - short notes about what slush is (people, startups, et..)

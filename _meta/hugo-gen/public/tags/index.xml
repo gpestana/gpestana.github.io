@@ -6,15 +6,15 @@
     <description>Recent content in Tags on gpestana</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 28 Oct 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 23 Nov 2017 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://gpestana.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Best practices</title>
+      <title>Best-practices</title>
       <link>https://gpestana.com/tags/best-practices/</link>
-      <pubDate>Sat, 28 Oct 2017 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 23 Nov 2017 00:00:00 +0000</pubDate>
       
       <guid>https://gpestana.com/tags/best-practices/</guid>
       <description></description>
@@ -39,9 +39,9 @@
     </item>
     
     <item>
-      <title>Data pipeline</title>
+      <title>Data-pipeline</title>
       <link>https://gpestana.com/tags/data-pipeline/</link>
-      <pubDate>Sat, 28 Oct 2017 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 23 Nov 2017 00:00:00 +0000</pubDate>
       
       <guid>https://gpestana.com/tags/data-pipeline/</guid>
       <description></description>
@@ -57,11 +57,38 @@
     </item>
     
     <item>
+      <title>Ethics</title>
+      <link>https://gpestana.com/tags/ethics/</link>
+      <pubDate>Sat, 11 Nov 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://gpestana.com/tags/ethics/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Kapacitor-unit</title>
       <link>https://gpestana.com/tags/kapacitor-unit/</link>
       <pubDate>Mon, 23 Jan 2017 00:00:00 +0000</pubDate>
       
       <guid>https://gpestana.com/tags/kapacitor-unit/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Microservices</title>
+      <link>https://gpestana.com/tags/microservices/</link>
+      <pubDate>Thu, 23 Nov 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://gpestana.com/tags/microservices/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Social-network</title>
+      <link>https://gpestana.com/tags/social-network/</link>
+      <pubDate>Sat, 11 Nov 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://gpestana.com/tags/social-network/</guid>
       <description></description>
     </item>
     

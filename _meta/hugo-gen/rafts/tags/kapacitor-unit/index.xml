@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Kapacitor-unit on gpestana</title>
+    <link>http://localhost:1313/tags/kapacitor-unit/</link>
+    <description>Recent content in Kapacitor-unit on gpestana</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 23 Jan 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://localhost:1313/tags/kapacitor-unit/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>kapacitor-unit: unit tests framework for TICKscripts</title>
+      <link>http://localhost:1313/blog/kapacitor-unit/</link>
+      <pubDate>Mon, 23 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/blog/kapacitor-unit/</guid>
+      <description>This post discusses ideas for a proof of concept for a unit test framework for Kapacitor&amp;rsquo;s TICKscripts and alerts. If you are not familiar with Kapacitor and the TICK script I really suggest you to go ahead and check InfluxData&amp;rsquo;s website and learn more about it! In short, the TICK stack is a time series data platform that allows you to easily store, analyse and act on time series data at scale.</description>
+    </item>
+    
+  </channel>
+</rss>

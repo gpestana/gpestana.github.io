@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Don&#39;t trust the data | gpestana</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/fonts.css" />
+
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-50045633-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+       function gtag(){dataLayer.push(arguments);}
+       gtag('js', new Date());
+       gtag('config', 'UA-50045633-1');
+     </script>
+
+  <header>
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/atom-one-light.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <nav>
+    <ul>
+      
+      
+      <li class="pull-left ">
+        <a href="http://localhost:1313/">gpestana</a>
+      </li>
+      
+      
+      <li class="pull-left ">
+        <a href="/project/">projects</a>
+      </li>
+      
+      
+      <li class="pull-left ">
+        <a href="/books/">books</a>
+      </li>
+      
+      
+      <li class="pull-left ">
+        <a href="/talks/">talks</a>
+      </li>
+      
+      
+      <li class="pull-left ">
+        <a href="https://www.gpestana.com/cv.pdf">cv</a>
+      </li>
+      
+
+      
+      
+      <li class="pull-right">
+        <a href="/index.xml">blog/subscribe</a>
+      </li>
+      
+      
+      <li class="pull-right">
+        <a href="/tags/">blog/tags</a>
+      </li>
+      
+
+    </ul>
+  </nav>
+</header>
+
+
+</head>
+
+  <body>
+    <br/>
+
+<div class="article-meta">
+<h1><span class="title">Don&#39;t trust the data</span></h1>
+
+<p class="terms">
+  
+  
+  
+  
+  Tags: <a href="/tags/data-pipeline">data-pipeline</a> <a href="/tags/microservices">microservices</a> <a href="/tags/best-practices">best-practices</a> 
+  
+  
+</p>
+</div>
+
+
+
+<main>
+<p><strong>&gt;</strong> <em>This post is part of the series &ldquo;The Zen of Data Pipelines&rdquo; which explores how to build scalable and robust data systems. Most of the ideas and best practices described in this series were learned while implementing and maintaining a large scale data pipeline at F-Secure for the <a href="https://www.f-secure.com/en/web/business_global/rapid-detection-service">Rapid Detection Service</a>. You can find more posts of this series in this blog or all series content in <a href="https://www.gitbook.com/book/gpestana/the-zen-of-data-pipelines/details">Gitbook</a>.</em></p>
+
+<p><br></p>
+
+<p>Data is messy. No matter how reliable the data sources are, your system can never trust its input. The system must gracefully handle input which does not comply with the specs or is corrupted. Statistically, a data pipeline that handles large amount of data has more probability of getting wrong or corrupted input. If the system does not handle those cases gracefully, services will break, data processing halt or significantly reduce performance. Even worse, data processing may work just fine but produce wrong results without providing any visibility of the problem.</p>
+
+<p>There are some strategies to handle corrupted or unexpected data. First and foremost, sanitize the input data at the beginning of the pipeline before the data processing starts. This step is essential since external data sources may push corrupted data. Another strategy is to wrap all the data input in a well defined payload. Defining a common format for every data unit processed by the pipeline ensures that all services know what to expect: it works as a contract between services. Sanitizing and wrapping the input on a well defined data format standardizes how the data looks like and defines a contract between all services, regardless of the data source or data type. The goal with this pre-processing step is to make sure the data to process is &lsquo;clean&rsquo; and obeys a contract which all services understand.</p>
+
+<p>Pre-processing can be divided into two stages: the pre-processing of raw data coming from external data sources and the pre-processing in each service of the pipeline. While the raw pre-processing aims at making sure that input data is not corrupted and its format respects a well defined format, the goal of the pre-processing in each service is to prevent misbehaving services from introducing unexpected data payload.</p>
+
+<p>Another sound strategy is to define (and document) what data transformations are performed by every service: which data fields may be modified, added or removed. Having clear contracts for each service helps to understand what input each service is expecting and what is the format of its output, what data transformations each service performs and so on. Conceptually, each service is a building block from which data flows to and from. To have a well defined and documented contract for each service goes a long way to make sure data is piped smoothly between all building blocks of the system.
+Be sure to create common libraries shared by services that handle the service pre-processing logic. Those libraries should handle errors (e.g. corrupted data, missing data, etc…) in an uniform way. Preferably, error logs and service metrics should be pushed upstream. That data should be used to trigger alerts when critical errors happen during the data parsing and sanitizing.</p>
+
+<p>In case of critical pre-processing errors, the data units that cause the error must be dropped from the processing pipeline. That data should be stored on a dedicated data store for corrupted data for further inspection and recovery. It&rsquo;s important to have the tooling to inspect and recover the corrupted data in place. Bugs introduced into services or sudden misbehaving of data sources may generate huge amounts of corrupted data quickly. Being able to promptly inspect and debug why the data is corrupted during the pre-processing stages is a great place to be when maintaining large data pipelines. The tooling for recovering corrupted data can be more complex. It should read data from the corrupted data buffer, make the necessary transformations for turning it into valid data and push it to the correct buffer or service in the pipeline. Although recovering corrupted data can be complex, in some contexts data just can&rsquo;t be lost. In those cases, having automated tooling will save you in mayday situations when tons of data are being discarded by the system for being considered corrupted.</p>
+
+<p><strong>Takeaway</strong>: Don&rsquo;t trust the input data. Inspect and sanitize the input before processing it. Wrap the input data in a higher data format. Implement logic that handles gracefully unexpected data payload in every processing service, even if the data has been sanitized and verified before. Have a mechanism in place to store data with corrupted payload and the tooling to recover it. Data format errors should be visible and unified across all services.</p>
+
+</main>
+
+    <footer>
+      
+<script async src="//yihui.name/js/center-img.js"></script>
+
+      
+      <hr/>
+      <a href="https://github.com/gpestana">Github</a> | <a href="https://twitter.com/gpestana">Twitter</a>
+      
+    </footer>
+  <script data-no-instant>document.write('<script src="/livereload.js?port=1313&mindelay=10"></' + 'script>')</script></body>
+</html>
+

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Consensus manager for JS | gpestana</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/fonts.css" />
+
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-50045633-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+       function gtag(){dataLayer.push(arguments);}
+       gtag('js', new Date());
+       gtag('config', 'UA-50045633-1');
+     </script>
+
+  <header>
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/atom-one-light.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <nav>
+    <ul>
+      
+      
+      <li class="pull-left ">
+        <a href="http://localhost:1313/">gpestana</a>
+      </li>
+      
+      
+      <li class="pull-left ">
+        <a href="/project/">projects</a>
+      </li>
+      
+      
+      <li class="pull-left ">
+        <a href="/books/">books</a>
+      </li>
+      
+      
+      <li class="pull-left ">
+        <a href="/talks/">talks</a>
+      </li>
+      
+      
+      <li class="pull-left ">
+        <a href="https://www.gpestana.com/cv.pdf">cv</a>
+      </li>
+      
+
+      
+      
+      <li class="pull-right">
+        <a href="/index.xml">blog/subscribe</a>
+      </li>
+      
+      
+      <li class="pull-right">
+        <a href="/tags/">blog/tags</a>
+      </li>
+      
+
+    </ul>
+  </nav>
+</header>
+
+
+</head>
+
+  <body>
+    <br/>
+
+<div class="article-meta">
+<h1><span class="title">Consensus manager for JS</span></h1>
+
+<p class="terms">
+  
+  
+  
+  
+  Tags: <a href="/tags/consensus">consensus</a> <a href="/tags/code">code</a> 
+  
+  
+</p>
+</div>
+
+
+
+<main>
+<p>In one of my side-project - which uses socket.io - I need to reach a consensus amongst users in the same room. Initial
+requirements:</p>
+
+<ul>
+<li>The definition of &lsquo;consensus&rsquo; should be flexible and interchangeable in
+run-time;</li>
+<li>The time to reach the consensus should be tracked;</li>
+<li>The final consensus amongst the clients could possibly output some data
+that the server may need to use further on;</li>
+</ul>
+
+<p>My solution consists of a modular entity which I pompously called <em>consensus
+manager</em>. It is responsible for starting the consensus process and receiving
+and processing the responses from the
+clients. Finally, according to a pre-defined strategy, it puts an end to the protocol when the
+consensus has been reached. In addition, the consensus manager keeps track of the time taken for the whole process to be concluded, as well as stores the data coming from the clients.</p>
+
+<p>The module is available on npm:</p>
+
+<pre><code>npm install consensus-manager
+</code></pre>
+
+<p>As an example, let&rsquo;s consider a simple case: In a chat system, there are <em>X</em> peers
+connected to a server at a given time. The server should fire an event when half
+of the peers had communicated how many lines of chat each of them wrote, which
+is stored locally. Let&rsquo;s also consider that the connection is
+ maintained with socket.io.</p>
+
+<p>First, we must implement the consensus strategy, or the logic that defines what a consensus is:</p>
+
+<pre><code>module.exports = strategy_half
+
+function strategy_half(min_res) {
+  this.min_res    = min_res //where min_res is half of the X room users
+}
+
+strategy_half.prototype.isReady = function(results, time_diff, cb) {
+  if(results.length == this.min_res) {
+    cb(true, results, time_diff)
+  }
+  else cb(false)
+}
+</code></pre>
+
+<p>The strategy is then passed in the consensus manager constructor:</p>
+
+<pre><code>var ConsensusManager = require('consensus-manager'),
+Strategy             = require('... strategy_half.js')
+
+var strategy = new Strategy(min_res)
+var consensus = new ConsensusManager(strategy)
+</code></pre>
+
+<p>The underlying layers should take care of the communication between server and peers.
+Considering a socket.io communication layer, it would be something like this:</p>
+
+<pre><code>socket.in(roomID).emit('askNumberLines')
+
+
+socket.on('numberLinesResponse', function(nr_lines) {
+  consensus.process(nr_lines)
+})
+</code></pre>
+
+<p>Finally, when the requirements implemented by the strategy are met, a
+<em>consensus</em> event is triggered:</p>
+
+<pre><code>consensus.on('consensus', function(output, time_diff) {
+ //half of the peers answered and: 
+ //i) ouput contains their responses, 
+ //ii) time_diff says how much time did the process take.
+})
+</code></pre>
+
+<p>If the responses keep coming from peers after the protocol is over, the manager
+will trigger a <i>notListening</i> event.</p>
+
+<p>This solution is modular and extensible enough to structure and abstract
+simple scenarios of consensus and synchronization between peers, both in remote
+and local domains. The decoupling between the consensus manager and the definition
+of consensus itself is what does the magic here.</p>
+
+</main>
+
+    <footer>
+      
+<script async src="//yihui.name/js/center-img.js"></script>
+
+      
+      <hr/>
+      <a href="https://github.com/gpestana">Github</a> | <a href="https://twitter.com/gpestana">Twitter</a>
+      
+    </footer>
+  <script data-no-instant>document.write('<script src="/livereload.js?port=1313&mindelay=10"></' + 'script>')</script></body>
+</html>
+
