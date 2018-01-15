@@ -22,7 +22,7 @@ Storing data in CFS allows us to leverage services like AWS S3 [1], Cloud Storag
 
 <br>
 
-![CFS architecture](https://www.gpestana.com/static/data-fig1.jpg)
+![CFS architecture](https://raw.githubusercontent.com/gpestana/gpestana.github.io/master/static/data-fig1.jpg)
 
 **Fig. 1** *Architecture in which data is stored in a Cloud File System after it has been processed. If needed, spin up data storages or services that ingest a subset of data for temporary usage*
 
@@ -32,7 +32,7 @@ Unfortunately, in many cases the system requirements do not fit this architectur
 
 <br>
 
-![CFS architecture and external services](https://www.gpestana.com/static/data-fig2.jpg)
+![CFS architecture and external services](https://raw.githubusercontent.com/gpestana/gpestana.github.io/master/static/data-fig2.jpg)
 
 **Fig. 2** *The system may require that the data is available in a particular data storage after it has been processed. The data can be fan-out to both CFS and specific data storage in these cases.*
 
