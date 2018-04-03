@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://gpestana.com/blog/why-use-tor/</loc>
+    <lastmod>2018-04-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://gpestana.com/blog/store-data-smart/</loc>
     <lastmod>2018-01-15T00:00:00+00:00</lastmod>
   </url>
@@ -85,7 +90,7 @@
   
   <url>
     <loc>https://gpestana.com/</loc>
-    <lastmod>2018-01-15T00:00:00+00:00</lastmod>
+    <lastmod>2018-04-03T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -102,7 +107,19 @@
   
   <url>
     <loc>https://gpestana.com/post/</loc>
-    <lastmod>2018-01-15T00:00:00+00:00</lastmod>
+    <lastmod>2018-04-03T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://gpestana.com/tags/privacy/</loc>
+    <lastmod>2018-04-03T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://gpestana.com/tags/security/</loc>
+    <lastmod>2018-04-03T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -115,6 +132,12 @@
   <url>
     <loc>https://gpestana.com/tags/</loc>
     <lastmod>2018-01-15T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://gpestana.com/tags/tor/</loc>
+    <lastmod>2018-04-03T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
