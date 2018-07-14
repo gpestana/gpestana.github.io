@@ -11,31 +11,7 @@ footnotereturnlinkcontents = "↩"
     post = "/blog/:slug/"
 
 [params]
-    description = "personal page and blog of Gonçalo Pestana (gpestana)"
-    footer = "[Github](https://github.com/gpestana) | [Twitter](https://twitter.com/gpestana)"
-
-
-[[menu.main]]
-    name = "projects"
-    url = "/project/"
-    weight = 1
-
-[[menu.main]]
-    name = "books"
-    url = "/books/"
-    weight = 2
-
-[[menu.main]]
-    name = "talks"
-    url = "/talks/"
-    weight = 3
-
-[[menu.main]]
-    name = "CV"
-    url = "https://www.gpestana.com/cv.pdf"
-    weight = 4
-
-
+    description = "gonçalo pestana (gpestana)"
 
 [[menu.feed]]
     name = "blog/subscribe"

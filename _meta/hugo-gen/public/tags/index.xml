@@ -6,7 +6,7 @@
     <description>Recent content in Tags on gpestana</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 23 Nov 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 15 Jan 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://gpestana.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,7 +14,7 @@
     <item>
       <title>Best-practices</title>
       <link>https://gpestana.com/tags/best-practices/</link>
-      <pubDate>Thu, 23 Nov 2017 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 15 Jan 2018 00:00:00 +0000</pubDate>
       
       <guid>https://gpestana.com/tags/best-practices/</guid>
       <description></description>
@@ -41,7 +41,7 @@
     <item>
       <title>Data-pipeline</title>
       <link>https://gpestana.com/tags/data-pipeline/</link>
-      <pubDate>Thu, 23 Nov 2017 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 15 Jan 2018 00:00:00 +0000</pubDate>
       
       <guid>https://gpestana.com/tags/data-pipeline/</guid>
       <description></description>
@@ -84,11 +84,38 @@
     </item>
     
     <item>
+      <title>Privacy</title>
+      <link>https://gpestana.com/tags/privacy/</link>
+      <pubDate>Tue, 03 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://gpestana.com/tags/privacy/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Security</title>
+      <link>https://gpestana.com/tags/security/</link>
+      <pubDate>Tue, 03 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://gpestana.com/tags/security/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Social-network</title>
       <link>https://gpestana.com/tags/social-network/</link>
       <pubDate>Sat, 11 Nov 2017 00:00:00 +0000</pubDate>
       
       <guid>https://gpestana.com/tags/social-network/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tor</title>
+      <link>https://gpestana.com/tags/tor/</link>
+      <pubDate>Tue, 03 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://gpestana.com/tags/tor/</guid>
       <description></description>
     </item>
     

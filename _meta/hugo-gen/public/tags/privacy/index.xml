@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Privacy on gpestana</title>
+    <link>https://gpestana.com/tags/privacy/</link>
+    <description>Recent content in Privacy on gpestana</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 03 Apr 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://gpestana.com/tags/privacy/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Why everyone should be using Tor</title>
+      <link>https://gpestana.com/blog/why-use-tor/</link>
+      <pubDate>Tue, 03 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://gpestana.com/blog/why-use-tor/</guid>
+      <description>It&amp;rsquo;s been interesting weeks for those who have been thinking about online privacy and data protection and what does it mean in today&amp;rsquo;s hyper connected society. Although this is a multi layered problem - personal data can be collected at different network layers and in multiple ways- one of the most effective ways to protect our personal data is to use the Tor network.
+When I tell friends and non so technical people that they should be accessing the web through technologies that are used to access the dark web, I&amp;rsquo;m often received surprised reactions, fear, confusion and even disgust.</description>
+    </item>
+    
+  </channel>
+</rss>
