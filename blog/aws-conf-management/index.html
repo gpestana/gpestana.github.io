@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Notes on AWS ECS configuration and secret management done right | gpestana</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/fonts.css" />
+
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-50045633-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+       function gtag(){dataLayer.push(arguments);}
+       gtag('js', new Date());
+       gtag('config', 'UA-50045633-1');
+     </script>
+
+  <header>
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/atom-one-light.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <nav>
+    <ul>
+      
+      
+      <li class="pull-left ">
+        <a href="https://gpestana.com">gpestana</a>
+      </li>
+      
+
+      
+      
+      <li class="pull-right">
+        <a href="/index.xml">blog/subscribe</a>
+      </li>
+      
+      
+      <li class="pull-right">
+        <a href="/tags/">blog/tags</a>
+      </li>
+      
+
+    </ul>
+  </nav>
+</header>
+
+
+</head>
+
+  <body>
+    <br/>
+
+<div class="article-meta">
+<h1><span class="title">Notes on AWS ECS configuration and secret management done right</span></h1>
+
+<p class="terms">
+  
+  
+  
+  
+  Tags: <a href="/tags/best-practices">best-practices</a> <a href="/tags/devops">devops</a> <a href="/tags/aws">AWS</a> 
+  
+  
+</p>
+</div>
+
+
+
+<main>
+
+
+<p>Best practices for managing secrets and configurations in ECS containers:</p>
+
+<h3 id="requirements">Requirements:</h3>
+
+<ul>
+<li>configurations and secrets stored in paramter store and/or S3 bucket;</li>
+<li>encrypt secrets;</li>
+<li>do not push configurations to git/version control system;</li>
+<li>transparent to apps (e.g. it should be completely transparent for backend; it
+should not have code for pulling configurations/secrets from anywhere) this
+follows the 12 factor app style (<a href="https://12factor.net/">https://12factor.net/</a>);</li>
+<li>automatic reloads new configurations when these change upstream;</li>
+</ul>
+
+<p><strong>envaws</strong> (<a href="https://github.com/gpestana/envaws">https://github.com/gpestana/envaws</a>) created by me and presented at
+the Nordics AWS conf. IMO, the best way to approach the problem: it completely
+makes the handling of configurations and secrets transparent to the application.
+In the Dockerfile, by running: <code>CMD envaws yarn start</code>, the envaws will fetch
+the configurations from AWS parameterstore and/or S3 and populate the given
+command process with the configurations as env variables. As a bonus, we get
+also a polling mechanism out of the box: if the configurations change upstream,
+the docker container is rebooted and fetches the new configurations.</p>
+
+<p><strong>chamber</strong> (<a href="https://github.com/segmentio/chamber">https://github.com/segmentio/chamber</a>) similar to envaws, but
+without the poller (so it does not automatically reload if configurations
+change); Needs more configuration; It is an overkill if we consider the
+requirements above, since it has a lot more functionality.</p>
+
+<p><strong>fetch configurations at start in container</strong>: this option is not compliant with
+the &lsquo;transparent for application&rsquo; requirement. in this case, the ECS task would
+have to run <code>aws</code> commands to fetch the configurations from AWS parameter store.</p>
+
+</main>
+
+    <footer>
+      
+<script async src="//yihui.name/js/center-img.js"></script>
+
+      
+    </footer>
+  </body>
+</html>
+

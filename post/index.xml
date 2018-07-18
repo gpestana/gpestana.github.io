@@ -6,10 +6,20 @@
     <description>Recent content in Posts on gpestana</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 03 Apr 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 17 Jul 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://gpestana.com/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Notes on AWS ECS configuration and secret management done right</title>
+      <link>https://gpestana.com/blog/aws-conf-management/</link>
+      <pubDate>Tue, 17 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://gpestana.com/blog/aws-conf-management/</guid>
+      <description>Best practices for managing secrets and configurations in ECS containers:
+Requirements:  configurations and secrets stored in paramter store and/or S3 bucket; encrypt secrets; do not push configurations to git/version control system; transparent to apps (e.g. it should be completely transparent for backend; it should not have code for pulling configurations/secrets from anywhere) this follows the 12 factor app style (https://12factor.net/); automatic reloads new configurations when these change upstream;  envaws (https://github.</description>
+    </item>
     
     <item>
       <title>Why everyone should be using Tor</title>

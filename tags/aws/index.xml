@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Devops on gpestana</title>
-    <link>https://gpestana.com/tags/devops/</link>
-    <description>Recent content in Devops on gpestana</description>
+    <title>AWS on gpestana</title>
+    <link>https://gpestana.com/tags/aws/</link>
+    <description>Recent content in AWS on gpestana</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 17 Jul 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://gpestana.com/tags/devops/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://gpestana.com/tags/aws/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -19,16 +19,6 @@
       <guid>https://gpestana.com/blog/aws-conf-management/</guid>
       <description>Best practices for managing secrets and configurations in ECS containers:
 Requirements:  configurations and secrets stored in paramter store and/or S3 bucket; encrypt secrets; do not push configurations to git/version control system; transparent to apps (e.g. it should be completely transparent for backend; it should not have code for pulling configurations/secrets from anywhere) this follows the 12 factor app style (https://12factor.net/); automatic reloads new configurations when these change upstream;  envaws (https://github.</description>
-    </item>
-    
-    <item>
-      <title>Managing credentials in production</title>
-      <link>https://gpestana.com/blog/managing-production-credentials/</link>
-      <pubDate>Sun, 20 Aug 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://gpestana.com/blog/managing-production-credentials/</guid>
-      <description>Every software must deal and manage credentials at some point. I will define credentials in the context of this article as secrets that must be protected at all costs, under risk of seriously compromising the security of production systems. There are several points to have in mind when managing credentials of productions systems:
-Credentials storage should be kept secret by encryption and a strong access management. Credentials must never be transported but stored.</description>
     </item>
     
   </channel>
