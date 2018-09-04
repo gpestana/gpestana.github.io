@@ -10,4 +10,3 @@ security, metadata resistance, networking and decentralization
 
 [github](https://github.com/gpestana) | [twitter](https://twitter.com/gpestana)
 
-<br>
