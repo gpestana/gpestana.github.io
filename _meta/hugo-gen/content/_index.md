@@ -6,7 +6,8 @@ title: Home
 
 ## the world is eating software
 
-security, metadata resistance, networking and decentralization
+engineer and researcher at [hashmatter](https://hashmatter.com), focusing
+primarily on metadata resistance systems, networking and decentralization
 
 [github](https://github.com/gpestana) | [twitter](https://twitter.com/gpestana)
 
