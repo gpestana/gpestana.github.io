@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://gpestana.com/blog/in-pursuit-of-private-dhts/</loc>
+    <lastmod>2018-10-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://gpestana.com/blog/aws-conf-management/</loc>
     <lastmod>2018-07-17T00:00:00+00:00</lastmod>
   </url>
@@ -39,7 +44,7 @@
   
   <url>
     <loc>https://gpestana.com/blog/managing-production-credentials/</loc>
-    <lastmod>2017-08-20T00:00:00+00:00</lastmod>
+    <lastmod>2017-03-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -94,6 +99,12 @@
   </url>
   
   <url>
+    <loc>https://gpestana.com/tags/dht/</loc>
+    <lastmod>2018-10-01T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://gpestana.com/tags/ethics/</loc>
     <lastmod>2017-11-11T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -101,7 +112,7 @@
   
   <url>
     <loc>https://gpestana.com/</loc>
-    <lastmod>2018-07-17T00:00:00+00:00</lastmod>
+    <lastmod>2018-10-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -122,19 +133,19 @@
   
   <url>
     <loc>https://gpestana.com/post/</loc>
-    <lastmod>2018-07-17T00:00:00+00:00</lastmod>
+    <lastmod>2018-10-01T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://gpestana.com/tags/privacy/</loc>
-    <lastmod>2018-04-03T00:00:00+00:00</lastmod>
+    <lastmod>2018-10-01T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://gpestana.com/tags/security/</loc>
-    <lastmod>2018-04-03T00:00:00+00:00</lastmod>
+    <lastmod>2018-10-01T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   

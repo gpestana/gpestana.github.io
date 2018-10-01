@@ -1,6 +1,6 @@
 ---
 title: "Managing credentials in production"
-date: '2017-08-20'
+date: '2017-03-01'
 tags:
   - devops
   - best-practices

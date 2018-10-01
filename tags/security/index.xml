@@ -6,10 +6,19 @@
     <description>Recent content in Security on gpestana</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 03 Apr 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 01 Oct 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://gpestana.com/tags/security/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>In Pursuit of Private DHTs</title>
+      <link>https://gpestana.com/blog/in-pursuit-of-private-dhts/</link>
+      <pubDate>Mon, 01 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://gpestana.com/blog/in-pursuit-of-private-dhts/</guid>
+      <description>Services based on P2P and decentralized networks are reaching mass adoption (e.g. Bitcoin, Ethereum, IPFS, Dat). People are calling this new wave of distributed and decentralized systems the Web 3.0. Many of these services and networks rely heavily on Distributed Hash Tables (DHTs) - e.g. IPFS, bittorrent - or use it as an important building block (e.g. Ethereum). It is expected that DHTs will be an important building block for many networks and services for the Web 3.</description>
+    </item>
     
     <item>
       <title>Why everyone should be using Tor</title>

@@ -6,10 +6,19 @@
     <description>Recent content in Home on gpestana</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 17 Jul 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 01 Oct 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://gpestana.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>In Pursuit of Private DHTs</title>
+      <link>https://gpestana.com/blog/in-pursuit-of-private-dhts/</link>
+      <pubDate>Mon, 01 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://gpestana.com/blog/in-pursuit-of-private-dhts/</guid>
+      <description>Services based on P2P and decentralized networks are reaching mass adoption (e.g. Bitcoin, Ethereum, IPFS, Dat). People are calling this new wave of distributed and decentralized systems the Web 3.0. Many of these services and networks rely heavily on Distributed Hash Tables (DHTs) - e.g. IPFS, bittorrent - or use it as an important building block (e.g. Ethereum). It is expected that DHTs will be an important building block for many networks and services for the Web 3.</description>
+    </item>
     
     <item>
       <title>Notes on AWS ECS configuration and secret management done right</title>
@@ -80,7 +89,7 @@ the dopamine shots carefully engineered to hook us up are ethically and morally 
     <item>
       <title>Managing credentials in production</title>
       <link>https://gpestana.com/blog/managing-production-credentials/</link>
-      <pubDate>Sun, 20 Aug 2017 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 01 Mar 2017 00:00:00 +0000</pubDate>
       
       <guid>https://gpestana.com/blog/managing-production-credentials/</guid>
       <description>Every software must deal and manage credentials at some point. I will define credentials in the context of this article as secrets that must be protected at all costs, under risk of seriously compromising the security of production systems. There are several points to have in mind when managing credentials of productions systems:

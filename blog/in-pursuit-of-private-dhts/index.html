@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>In Pursuit of Private DHTs | gpestana</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/fonts.css" />
+
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-50045633-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+       function gtag(){dataLayer.push(arguments);}
+       gtag('js', new Date());
+       gtag('config', 'UA-50045633-1');
+     </script>
+
+  <header>
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/atom-one-light.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <nav>
+    <ul>
+      
+      
+      <li class="pull-left ">
+        <a href="https://gpestana.com">gpestana</a>
+      </li>
+      
+
+      
+      
+      <li class="pull-right">
+        <a href="/index.xml">blog/subscribe</a>
+      </li>
+      
+      
+      <li class="pull-right">
+        <a href="/tags/">blog/tags</a>
+      </li>
+      
+
+    </ul>
+  </nav>
+</header>
+
+
+</head>
+
+  <body>
+    <br/>
+
+<div class="article-meta">
+<h1><span class="title">In Pursuit of Private DHTs</span></h1>
+
+<p class="terms">
+  
+  
+  
+  
+  Tags: <a href="/tags/security">security</a> <a href="/tags/privacy">privacy</a> <a href="/tags/dht">dht</a> 
+  
+  
+</p>
+</div>
+
+
+
+<main>
+<p>Services based on P2P and decentralized networks are reaching mass adoption
+(e.g. Bitcoin, Ethereum, IPFS, Dat). People are calling this new wave of
+distributed and decentralized systems the Web 3.0. Many of these services and
+networks rely heavily on Distributed Hash Tables (DHTs) - e.g. IPFS, bittorrent - or use
+it as an important building block (e.g. Ethereum). It is expected that DHTs will
+be an important building block for many networks and services for the Web 3.0.</p>
+
+<p>Distributed hash tables are powerful protocols that enable content discovering
+and routing in P2P networks. In &ldquo;vanilla&rdquo; DHT implementations (e.g. Kademlia,
+Chord),
+peer interactions leak a lot of information about who is in the network, who
+stores what files and who are the producers and consumers of content. This gives
+potential attackers a good picture of the network with fewer resources and hinders
+anonymous and private interactions over P2P DHT overlay networks.</p>
+
+<p>Some of the desirable properties of a private and metadata resistant DHT are:</p>
+
+<ul>
+<li><p><strong>Anonymity for producers of content</strong>: tracking down who was the originator of
+content stored in the DHT should not be possible.</p></li>
+
+<li><p><strong>Anonymity for consumers of content</strong>: nodes that request content from the DHT
+should not be linked to the requested content by external actors.</p></li>
+
+<li><p><strong>Plausible deniability of the files hosted in the network nodes</strong>: when peers query
+for content in the DHT, they should not be able to identify which peers are
+storing the content.</p></li>
+</ul>
+
+<p>The information leaked by DHTs can be used to target and censor
+individuals, communities and services. Private, anonymous and metadata resistant
+systems are important for ensuring that our privacy is protected against
+attackers. Thus, given the importance DHTs will have in future services and
+networks, it is important to research and develop protocols and primitives
+that keep DHT users anonymous.</p>
+
+<p><a href="https://github.com/gpestana/notes/issues/8">Research on metadata resistant DHT (Github)</a></p>
+
+</main>
+
+    <footer>
+      
+<script async src="//yihui.name/js/center-img.js"></script>
+
+      
+    </footer>
+  </body>
+</html>
+
