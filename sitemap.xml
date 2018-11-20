@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://gpestana.com/blog/capital/</loc>
+    <lastmod>2018-11-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://gpestana.com/blog/in-pursuit-of-private-dhts/</loc>
     <lastmod>2018-10-01T00:00:00+00:00</lastmod>
   </url>
@@ -70,6 +75,12 @@
   </url>
   
   <url>
+    <loc>https://gpestana.com/tags/capitalism/</loc>
+    <lastmod>2018-11-17T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://gpestana.com/categories/</loc>
     <priority>0</priority>
   </url>
@@ -105,6 +116,12 @@
   </url>
   
   <url>
+    <loc>https://gpestana.com/tags/economy/</loc>
+    <lastmod>2018-11-17T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://gpestana.com/tags/ethics/</loc>
     <lastmod>2017-11-11T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -112,7 +129,7 @@
   
   <url>
     <loc>https://gpestana.com/</loc>
-    <lastmod>2018-10-01T00:00:00+00:00</lastmod>
+    <lastmod>2018-11-17T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -133,7 +150,7 @@
   
   <url>
     <loc>https://gpestana.com/post/</loc>
-    <lastmod>2018-10-01T00:00:00+00:00</lastmod>
+    <lastmod>2018-11-17T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
