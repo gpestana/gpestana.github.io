@@ -6,10 +6,19 @@
     <description>Recent content in Security on gpestana</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 01 Oct 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 22 Jan 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://gpestana.com/tags/security/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Privacy preserving engineering</title>
+      <link>https://gpestana.com/blog/privacy-preserving-engineering/</link>
+      <pubDate>Tue, 22 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://gpestana.com/blog/privacy-preserving-engineering/</guid>
+      <description>One thing that is interesting about P2P and decentralised networks is that they tend to the &amp;ldquo;property extreme&amp;rdquo; (!lacking of a better name..). Consider, for example, scalability. P2P networks have better potential to scale compared to centralised (and distributed) client-server systems. That potential comes from the fact that network users can contribute with resources for the network to function, resulting on very interesting and self-sustained ecosystem in which scalability is elastic and self-regulated.</description>
+    </item>
     
     <item>
       <title>In Pursuit of Private DHTs</title>

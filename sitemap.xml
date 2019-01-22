@@ -3,7 +3,17 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://gpestana.com/blog/privacy-preserving-engineering/</loc>
+    <lastmod>2019-01-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://gpestana.com/blog/capital/</loc>
+    <lastmod>2018-11-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://gpestana.com/blog/p2p-privacy-vulnerabilities/</loc>
     <lastmod>2018-11-17T00:00:00+00:00</lastmod>
   </url>
   
@@ -111,7 +121,7 @@
   
   <url>
     <loc>https://gpestana.com/tags/dht/</loc>
-    <lastmod>2018-10-01T00:00:00+00:00</lastmod>
+    <lastmod>2018-11-17T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -129,7 +139,7 @@
   
   <url>
     <loc>https://gpestana.com/</loc>
-    <lastmod>2018-11-17T00:00:00+00:00</lastmod>
+    <lastmod>2019-01-22T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -149,20 +159,38 @@
   </url>
   
   <url>
-    <loc>https://gpestana.com/post/</loc>
+    <loc>https://gpestana.com/tags/p2p/</loc>
+    <lastmod>2019-01-22T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://gpestana.com/tags/p2p/</loc>
     <lastmod>2018-11-17T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
+    <loc>https://gpestana.com/post/</loc>
+    <lastmod>2019-01-22T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://gpestana.com/tags/privacy/</loc>
-    <lastmod>2018-10-01T00:00:00+00:00</lastmod>
+    <lastmod>2018-11-17T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://gpestana.com/tags/privacy-preserving-networks/</loc>
+    <lastmod>2019-01-22T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://gpestana.com/tags/security/</loc>
-    <lastmod>2018-10-01T00:00:00+00:00</lastmod>
+    <lastmod>2019-01-22T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   

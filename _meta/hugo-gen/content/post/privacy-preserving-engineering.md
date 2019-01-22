@@ -1,0 +1,78 @@
+---
+title: "Privacy preserving engineering"
+date: '2019-01-22'
+tags:
+  - security
+  - privacy-preserving-networks
+  - P2P
+slug: privacy-preserving-engineering
+draft: false
+---
+
+One thing that is interesting about P2P and decentralised networks is that they
+tend to the "property extreme" (!lacking of a better name..). Consider, for
+example, scalability. P2P networks have better *potential* to scale compared to
+centralised (and distributed) client-server systems. That *potential* comes from
+the fact that network users can contribute with resources for the network to
+function, resulting on very interesting and self-sustained ecosystem in which
+scalability is elastic and self-regulated. The problem is how complex it is for
+designers and developers to turn that *potential* into reality: P2P protocols and
+networks are hard to design and to implement. It's hard to get all the pieces
+right: from low level networking to peer interaction protocols, incentives
+design, security, trust, privacy (and the list goes on..). Potential and
+complexity are the forces behind the "property extreme" in P2P decentralised
+systems: a system can potentially provide very good scalability but if it is
+poorly designed and implemented scalability will end up being a bottleneck
+instead of an edge.
+
+Same goes for privacy. One of the most interesting propositions of P2P and
+decentralised networks is its *potential* for respecting user's privacy by design.
+Privacy by design becomes even more promising when compared to the current state
+of affairs in which the services we use online are owned by companies with the
+means and the incentives to register everything about their users. In P2P and
+decentralised networks, there is no central entity which sieves through all what
+happens in the network. However, P2P designs often require many to many
+communication patterns and collaboration. Users in the network often work as
+message relayers (one of the ways for everyone to contribute with resources to
+the network) and need to make decisions based on their partial view of the state
+of the network. With such constraints, network users (or peers) need to
+collaborate and learn about each other's partial view of the network state. At a
+higher level, these interactions often result on a lot of systemic leakage of
+privacy-sensitive information: what a peers knows over time may disclose what
+she's been up to. Or correlating the message patterns over time of a subset of
+network peers may disclose what data they are consuming or serving. This
+information leakage is even more important because it is disclosed not to one
+entity as in centralised systems, but potentially to the whole network. Again,
+the "property extreme" is at play: there is a lot of *potential* to design and
+implement systems with the best privacy properties, but it will most likely be
+leaking private data all over the place.
+
+So there is a problem: it is hard to design and implement P2P and decentralised
+networks and ensure the correct properties. For privacy preserving networks,
+there is lack of primitives and implemented protocols that can be easily used
+and adapted by developers. There is also a rather large chasm between academic
+research on anonymous communications and privacy preserving networking and the
+mechanisms and protocols implemented by current P2P projects. I argue that if we
+want to design and build privacy preserving networks, we need as a community to
+invest more time on:
+
+- building modular and easy to use primitives and protocols for privacy preserving
+P2P networks;
+- improve developer and system designer awareness about privacy enhancing
+technologies;
+- close the gap between academia and industry: bring the of the art on research of
+privacy preserving networks to the industry as soon as possible;
+- measure and assess privacy in current P2P networks and understand how to improve
+it.
+
+**Privacy preserving engineering** is not a thing. Yet. We at hashmatter are working
+on projects that enable developers and P2P system designers to build privacy
+preserving networks. We're building p3lib, is a library with modular privacy
+preserving primitives and protocols (p3) for routing and messaging in P2P
+networks. We've also started PPP, a list of primitives and protocols that can be
+used in networked systems for improving privacy and anonymity. And we've been
+also researching on privacy preserving networks. We also believe that the
+community could use more network security and privacy audits of P2P networks, so
+we are also putting those efforts together.
+
+

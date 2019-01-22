@@ -6,10 +6,19 @@
     <description>Recent content in Home on gpestana</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 17 Nov 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 22 Jan 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://gpestana.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Privacy preserving engineering</title>
+      <link>https://gpestana.com/blog/privacy-preserving-engineering/</link>
+      <pubDate>Tue, 22 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://gpestana.com/blog/privacy-preserving-engineering/</guid>
+      <description>One thing that is interesting about P2P and decentralised networks is that they tend to the &amp;ldquo;property extreme&amp;rdquo; (!lacking of a better name..). Consider, for example, scalability. P2P networks have better potential to scale compared to centralised (and distributed) client-server systems. That potential comes from the fact that network users can contribute with resources for the network to function, resulting on very interesting and self-sustained ecosystem in which scalability is elastic and self-regulated.</description>
+    </item>
     
     <item>
       <title>Capital</title>
@@ -18,6 +27,17 @@
       
       <guid>https://gpestana.com/blog/capital/</guid>
       <description>I cherish moments when I stumble upon people who get their mental model of the world across fluently and with clarity. These people often challenge or reinforce my personal ideas and always influence me somehow. Recently I&amp;rsquo;ve listened to a podcast episode hosted by Russel Brand, where Yanis Varoufakis was the guest and personally I found the conversation full of interesting insights. Their discussion jumped from topics like the state of Europe to the times of Varoufakis as Greek finance minister, the degeneration of capitalism and its institutions, how commodification and alienation of our society and values are turning us into miserable people, detached from humanity and raw material that keeps the current system of capital accumulation alive.</description>
+    </item>
+    
+    <item>
+      <title>P2P privacy vulnerabilities - the DHT case</title>
+      <link>https://gpestana.com/blog/p2p-privacy-vulnerabilities/</link>
+      <pubDate>Sat, 17 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://gpestana.com/blog/p2p-privacy-vulnerabilities/</guid>
+      <description>DHT lookups are extremely vulnerable to attacks on the lookup mechanism (both active and passive)
+(castro et al)
+ castro et al buddy mechanism onion routing lnd  </description>
     </item>
     
     <item>
