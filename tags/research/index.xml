@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>P2P on gpestana</title>
-    <link>https://gpestana.com/tags/p2p/</link>
-    <description>Recent content in P2P on gpestana</description>
+    <title>Research on gpestana</title>
+    <link>https://gpestana.com/tags/research/</link>
+    <description>Recent content in Research on gpestana</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 02 Apr 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://gpestana.com/tags/p2p/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://gpestana.com/tags/research/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -19,15 +19,6 @@
       <guid>https://gpestana.com/blog/p2p-everyone-is-naked/</guid>
       <description>Note: this is a draft post
 In this talk, we&amp;rsquo;ll discuss one of the hardest challenges of decentralized web and P2P systems: privacy. We’ll focus on current systems and applications built or relying on P2P networks, focusing on the rather interesting tension between scalability, performance, discoverability (or collaboration, for short) and privacy of the network users. We will demonstrate how current systems are a threat for user privacy and briefly discuss how recent research has been trying to solve current open problems while taking into considerations the tradeoffs between privacy and usability.</description>
-    </item>
-    
-    <item>
-      <title>Privacy preserving engineering</title>
-      <link>https://gpestana.com/blog/privacy-preserving-engineering/</link>
-      <pubDate>Tue, 22 Jan 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://gpestana.com/blog/privacy-preserving-engineering/</guid>
-      <description>One thing that is interesting about P2P and decentralised networks is that they tend to the &amp;ldquo;property extreme&amp;rdquo; (!lacking of a better name..). Consider, for example, scalability. P2P networks have better potential to scale compared to centralised (and distributed) client-server systems. That potential comes from the fact that network users can contribute with resources for the network to function, resulting on very interesting and self-sustained ecosystem in which scalability is elastic and self-regulated.</description>
     </item>
     
   </channel>

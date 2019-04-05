@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Onion routing and mixing on P2P overlay networks | gpestana</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/fonts.css" />
+
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-50045633-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+       function gtag(){dataLayer.push(arguments);}
+       gtag('js', new Date());
+       gtag('config', 'UA-50045633-1');
+     </script>
+
+  <header>
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/atom-one-light.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <nav>
+    <ul>
+      
+      
+      <li class="pull-left ">
+        <a href="https://gpestana.com">gpestana</a>
+      </li>
+      
+
+      
+      
+      <li class="pull-right">
+        <a href="/index.xml">blog/subscribe</a>
+      </li>
+      
+      
+      <li class="pull-right">
+        <a href="/tags/">blog/tags</a>
+      </li>
+      
+
+    </ul>
+  </nav>
+</header>
+
+
+</head>
+
+  <body>
+    <br/>
+
+<div class="article-meta">
+<h1><span class="title">Onion routing and mixing on P2P overlay networks</span></h1>
+
+<p class="terms">
+  
+  
+  
+  
+  Tags: <a href="/tags/p2p">p2p</a> <a href="/tags/dht">dht</a> <a href="/tags/privacy-preserving-networks">privacy-preserving-networks</a> 
+  
+  
+</p>
+</div>
+
+
+
+<main>
+<p><em>This post has been cross-posted at <a href="https://medium.com/hashmatter">hashmatter medium blog</a></em></p>
+
+<p>Traffic analysis in P2P networks should be a concern of network and protocol designers. P2P networks are susceptible to traffic analysis as a by product of its biggest merits: peer collaboration instead of centralized knowledge and partial-view instead of global view. By definition peers need to collaborate with each other for achieving whatever goal the network aims at solving. That same collaboration often leaks information about what are the goals of individual peers in the network.</p>
+
+<p>As practical example, consider <a href="https://en.wikipedia.org/wiki/Distributed_hash_table">distributed hash tables</a> (DHT) where peers collaborate with each other on routing and looking up for content stored across the network. Peers do not keep and maintain a directory locally with pointers to where the data is stored in the DHT - that would be infeasible for large enough networks and networks under heavy churn. Each peer keep a local and partial view of the network and &ldquo;ask&rdquo; other peers to complete their view of the network when needed. The collaborative nature of P2P networks works as an ingenious counter measure against a central point of knowledge (and failure), where all the information needed to use the service is centralized and controlled by one or few entities.</p>
+
+<p>Why considering onion routing and mixing on P2P overlay networks
+What is onion routing and mixing
+Goals: completely decentralized (no authorities or centralized directories)
+Presenting four main open challenges
+Comparing with Tor</p>
+
+<p>4 main problems:</p>
+
+<ul>
+<li><p>randomly selecting relay nodes with partial view of the network</p></li>
+
+<li><p>circuit maintenance when relays churn</p></li>
+
+<li><p>overhead</p></li>
+
+<li><p>incentives for relayers</p></li>
+
+<li><p>(bonus) metrics and (again, Tor has this centralized)</p></li>
+</ul>
+
+<p>Go (Goncalo Pestana)</p>
+
+</main>
+
+    <footer>
+      
+<script async src="//yihui.name/js/center-img.js"></script>
+
+      
+    </footer>
+  </body>
+</html>
+

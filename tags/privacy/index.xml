@@ -6,10 +6,20 @@
     <description>Recent content in Privacy on gpestana</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 17 Nov 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 02 Apr 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://gpestana.com/tags/privacy/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Everyone is naked - privacy in P2P networks</title>
+      <link>https://gpestana.com/blog/p2p-everyone-is-naked/</link>
+      <pubDate>Tue, 02 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://gpestana.com/blog/p2p-everyone-is-naked/</guid>
+      <description>Note: this is a draft post
+In this talk, we&amp;rsquo;ll discuss one of the hardest challenges of decentralized web and P2P systems: privacy. We’ll focus on current systems and applications built or relying on P2P networks, focusing on the rather interesting tension between scalability, performance, discoverability (or collaboration, for short) and privacy of the network users. We will demonstrate how current systems are a threat for user privacy and briefly discuss how recent research has been trying to solve current open problems while taking into considerations the tradeoffs between privacy and usability.</description>
+    </item>
     
     <item>
       <title>P2P privacy vulnerabilities - the DHT case</title>

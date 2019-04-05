@@ -6,7 +6,7 @@ tags:
   - dht
   - privacy-preserving-networks
 slug: decentralized-onion-routing
-draft: false
+draft: true
 ---
 
 *This post has been cross-posted at [hashmatter medium blog](https://medium.com/hashmatter)*
@@ -33,4 +33,3 @@ Comparing with Tor
 
 - (bonus) metrics and (again, Tor has this centralized)
 
-Go (Goncalo Pestana)
