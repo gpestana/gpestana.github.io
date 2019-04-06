@@ -12,13 +12,12 @@
     
     
     <item>
-      <title>Everyone is naked - privacy in P2P networks</title>
+      <title>Everyone is naked: Privacy in P2P networks</title>
       <link>https://gpestana.com/blog/p2p-everyone-is-naked/</link>
       <pubDate>Tue, 02 Apr 2019 00:00:00 +0000</pubDate>
       
       <guid>https://gpestana.com/blog/p2p-everyone-is-naked/</guid>
-      <description>Note: this is a draft post
-In this talk, we&amp;rsquo;ll discuss one of the hardest challenges of decentralized web and P2P systems: privacy. We’ll focus on current systems and applications built or relying on P2P networks, focusing on the rather interesting tension between scalability, performance, discoverability (or collaboration, for short) and privacy of the network users. We will demonstrate how current systems are a threat for user privacy and briefly discuss how recent research has been trying to solve current open problems while taking into considerations the tradeoffs between privacy and usability.</description>
+      <description>Abstract The ethos of the P2P community and the decentralized web is based on a new paradigm where people and communities can interoperate and collaborate without the need for external stewardship. This new paradigm opens doors for user self-sovereignty, personal data ownership and freedom from central authorities which incentives tend to lock-in their users and to hold and monetize private data in order to maximize their profits. However, P2P and decentralized protocols are complex and collaboration between multiple parties often leaks metadata that can be used to target individuals and communities.</description>
     </item>
     
   </channel>
