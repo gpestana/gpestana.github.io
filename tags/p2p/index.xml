@@ -1,25 +1,32 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>P2p on gpestana</title>
+    <title>P2P on gpestana</title>
     <link>https://gpestana.com/tags/p2p/</link>
-    <description>Recent content in P2p on gpestana</description>
+    <description>Recent content in P2P on gpestana</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 17 Nov 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 02 Apr 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://gpestana.com/tags/p2p/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>P2P privacy vulnerabilities - the DHT case</title>
-      <link>https://gpestana.com/blog/p2p-privacy-vulnerabilities/</link>
-      <pubDate>Sat, 17 Nov 2018 00:00:00 +0000</pubDate>
+      <title>Everyone is naked: Privacy in P2P networks</title>
+      <link>https://gpestana.com/blog/p2p-everyone-is-naked/</link>
+      <pubDate>Tue, 02 Apr 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://gpestana.com/blog/p2p-privacy-vulnerabilities/</guid>
-      <description>DHT lookups are extremely vulnerable to attacks on the lookup mechanism (both active and passive)
-(castro et al)
- castro et al buddy mechanism onion routing lnd  </description>
+      <guid>https://gpestana.com/blog/p2p-everyone-is-naked/</guid>
+      <description>Abstract The ethos of the P2P community and the decentralized web is based on a new paradigm where people and communities can interoperate and collaborate without the need for external stewardship. This new paradigm opens doors for user self-sovereignty, personal data ownership and freedom from central authorities which incentives tend to lock-in their users and to hold and monetize private data in order to maximize their profits. However, P2P and decentralized protocols are complex and collaboration between multiple parties often leaks metadata that can be used to target individuals and communities.</description>
+    </item>
+    
+    <item>
+      <title>Privacy preserving engineering</title>
+      <link>https://gpestana.com/blog/privacy-preserving-engineering/</link>
+      <pubDate>Tue, 22 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://gpestana.com/blog/privacy-preserving-engineering/</guid>
+      <description>One thing that is interesting about P2P and decentralised networks is that they tend to the &amp;ldquo;property extreme&amp;rdquo; (!lacking of a better name..). Consider, for example, scalability. P2P networks have better potential to scale compared to centralised (and distributed) client-server systems. That potential comes from the fact that network users can contribute with resources for the network to function, resulting on very interesting and self-sustained ecosystem in which scalability is elastic and self-regulated.</description>
     </item>
     
   </channel>

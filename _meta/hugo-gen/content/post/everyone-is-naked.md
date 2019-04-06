@@ -25,7 +25,5 @@ are not focusing on user privacy, failing to deliver it will render
 decentralized systems unusable and unattractive for mass adoption or as a viable
 alternative to centralized systems.
 
-<br><br>
-
 [Download and read the full paper here](https://gpestana.com/papers/everyone-is-naked-rev.pdf)
 
