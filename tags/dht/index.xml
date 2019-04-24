@@ -6,10 +6,20 @@
     <description>Recent content in Dht on gpestana</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 17 Nov 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 18 Apr 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://gpestana.com/tags/dht/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Coin Flipping Request Delegation</title>
+      <link>https://gpestana.com/blog/coin-flipping-request-delegation/</link>
+      <pubDate>Thu, 18 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://gpestana.com/blog/coin-flipping-request-delegation/</guid>
+      <description>The goal of Coin Flipping Request Delegation (CFRD) is to add plausible deniability of routing and lookup requests in P2P networks, with special emphasis on DHT networks. The CFRD lookup protocol works by probabilistically creating a new lookup from a received routing request.
+CFRD in Kademlia DHT In a Kademlia lookup request (as defined by these specs), the lookup initiator creates an ordered shortlist containing k peers closest to the ID of the contentID requested.</description>
+    </item>
     
     <item>
       <title>P2P privacy vulnerabilities - the DHT case</title>

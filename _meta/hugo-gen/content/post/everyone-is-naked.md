@@ -10,7 +10,7 @@ slug: p2p-everyone-is-naked
 draft: false
 ---
 
-**Abstract** The ethos of the P2P community and the decentralized web is based
+The ethos of the P2P community and the decentralized web is based
 on a new paradigm where people and communities can interoperate and collaborate
 without the need for external stewardship. This new paradigm opens doors for
 user self-sovereignty, personal data ownership and freedom from central

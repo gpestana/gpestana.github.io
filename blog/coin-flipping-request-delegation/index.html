@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Coin Flipping Request Delegation | gpestana</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/fonts.css" />
+
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-50045633-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+       function gtag(){dataLayer.push(arguments);}
+       gtag('js', new Date());
+       gtag('config', 'UA-50045633-1');
+     </script>
+
+  <header>
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/atom-one-light.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <nav>
+    <ul>
+      
+      
+      <li class="pull-left ">
+        <a href="https://gpestana.com">gpestana</a>
+      </li>
+      
+
+      
+      
+      <li class="pull-right">
+        <a href="/index.xml">blog/subscribe</a>
+      </li>
+      
+      
+      <li class="pull-right">
+        <a href="/tags/">blog/tags</a>
+      </li>
+      
+
+    </ul>
+  </nav>
+</header>
+
+
+</head>
+
+  <body>
+    <br/>
+
+<div class="article-meta">
+<h1><span class="title">Coin Flipping Request Delegation</span></h1>
+
+<p class="terms">
+  
+  
+  
+  
+  Tags: <a href="/tags/p2p">p2p</a> <a href="/tags/dht">dht</a> <a href="/tags/privacy-preserving-networks">privacy-preserving-networks</a> 
+  
+  
+</p>
+</div>
+
+
+
+<main>
+
+
+<p>The goal of Coin Flipping Request Delegation (CFRD) is to add plausible
+deniability of routing and lookup requests in P2P networks, with special
+emphasis on DHT networks. The CFRD lookup protocol works by probabilistically
+creating a new lookup from a received routing request.</p>
+
+<h3 id="cfrd-in-kademlia-dht">CFRD in Kademlia DHT</h3>
+
+<p>In a Kademlia lookup request (as defined by these
+<a href="http://xlattice.sourceforge.net/components/protocol/kademlia/specs.html">specs</a>),
+the lookup initiator creates an ordered shortlist containing <code>k</code> peers closest
+to the ID of the contentID requested. The shortlist is ordered by proximity and
+is first populated with peers in the initiator&rsquo;s bucket list. Each iteration of
+the protocol consists of selecting <code>α</code> of the closest peers to the contentID in
+the shortlist and issue in parallel a <code>FIND_VALUE</code> request to them. The
+responses contain a set of the closest peers of each of the peers which that
+received the <code>FIND_VALUE</code> request. This information is added to the shortlist in
+a way that it maintains its order (i.e. first peers are closer to the
+contentID). This protocol proceeds until 1) a peer responds with <code>STORE</code> message
+(value found); 2) an iteration in which no new peer is added to the shortlist
+(value not found) and; 3) lookup timeout.</p>
+
+<p>The CFRD construction transforms <code>FIND_VALUE</code> requests into new <code>FIND_VALUE</code>
+requests in a probabilistic way. When a peer receives a <code>FIND_VALUE</code> request, it
+will flip a coin to decide whether to respond to the request or instead start a
+lookup request itself. Once the lookup is resolved by the new peer (which is not
+the original initiator), it will cache the content and reply to the peer which
+initially asked for the content with a <code>STORE</code> message.</p>
+
+<p>This mechanism adds plausible deniability to DHT lookups, since (privacy)
+adversaries monitoring network requests (locally and to a certain threshold)
+will not be able to distinguish between original content lookups from lookups
+that were initiated because of the CFRD mechanism. This mechanism aims at
+decoupling peer behaviour (network request) from user behaviour (interests and
+personal behaviour).</p>
+
+<p>Comments and discussions on <a href="https://github.com/gpestana/notes/issues/23">Github</a></p>
+
+<p>Implementation and tests at <a href="https://github.com/hashmatter/p3lib">p3lib github</a></p>
+
+</main>
+
+    <footer>
+      
+<script async src="//yihui.name/js/center-img.js"></script>
+
+      
+    </footer>
+  </body>
+</html>
+
