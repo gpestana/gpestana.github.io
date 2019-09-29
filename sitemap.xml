@@ -8,7 +8,52 @@
   </url>
   
   <url>
+    <loc>https://gpestana.com/tags/dht/</loc>
+    <lastmod>2019-04-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://gpestana.com/</loc>
+    <lastmod>2019-04-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://gpestana.com/tags/p2p/</loc>
+    <lastmod>2019-04-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://gpestana.com/post/</loc>
+    <lastmod>2019-04-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://gpestana.com/tags/privacy-preserving-networks/</loc>
+    <lastmod>2019-04-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://gpestana.com/tags/</loc>
+    <lastmod>2019-04-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://gpestana.com/blog/p2p-everyone-is-naked/</loc>
+    <lastmod>2019-04-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://gpestana.com/tags/privacy/</loc>
+    <lastmod>2019-04-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://gpestana.com/tags/research/</loc>
+    <lastmod>2019-04-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://gpestana.com/tags/talk/</loc>
     <lastmod>2019-04-02T00:00:00+00:00</lastmod>
   </url>
   
@@ -18,7 +63,22 @@
   </url>
   
   <url>
+    <loc>https://gpestana.com/tags/security/</loc>
+    <lastmod>2019-01-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://gpestana.com/blog/capital/</loc>
+    <lastmod>2018-11-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://gpestana.com/tags/capitalism/</loc>
+    <lastmod>2018-11-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://gpestana.com/tags/economy/</loc>
     <lastmod>2018-11-17T00:00:00+00:00</lastmod>
   </url>
   
@@ -33,13 +93,38 @@
   </url>
   
   <url>
+    <loc>https://gpestana.com/tags/aws/</loc>
+    <lastmod>2018-07-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://gpestana.com/tags/best-practices/</loc>
+    <lastmod>2018-07-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://gpestana.com/tags/devops/</loc>
+    <lastmod>2018-07-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://gpestana.com/blog/aws-conf-management/</loc>
     <lastmod>2018-07-17T00:00:00+00:00</lastmod>
   </url>
   
   <url>
+    <loc>https://gpestana.com/tags/tor/</loc>
+    <lastmod>2018-04-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://gpestana.com/blog/why-use-tor/</loc>
     <lastmod>2018-04-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://gpestana.com/tags/data-pipeline/</loc>
+    <lastmod>2018-01-15T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -50,6 +135,21 @@
   <url>
     <loc>https://gpestana.com/blog/dont-trust-the-data/</loc>
     <lastmod>2017-11-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://gpestana.com/tags/microservices/</loc>
+    <lastmod>2017-11-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://gpestana.com/tags/ethics/</loc>
+    <lastmod>2017-11-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://gpestana.com/tags/social-network/</loc>
+    <lastmod>2017-11-11T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -73,8 +173,23 @@
   </url>
   
   <url>
+    <loc>https://gpestana.com/tags/code/</loc>
+    <lastmod>2017-01-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://gpestana.com/tags/kapacitor-unit/</loc>
+    <lastmod>2017-01-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://gpestana.com/blog/kapacitor-unit/</loc>
     <lastmod>2017-01-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://gpestana.com/tags/consensus/</loc>
+    <lastmod>2015-07-10T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -83,159 +198,15 @@
   </url>
   
   <url>
-    <loc>https://gpestana.com/tags/aws/</loc>
-    <lastmod>2018-07-17T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://gpestana.com/tags/best-practices/</loc>
-    <lastmod>2018-07-17T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://gpestana.com/tags/capitalism/</loc>
-    <lastmod>2018-11-17T00:00:00+00:00</lastmod>
-    <priority>0</priority>
+    <loc>https://gpestana.com/books/</loc>
   </url>
   
   <url>
     <loc>https://gpestana.com/categories/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://gpestana.com/tags/code/</loc>
-    <lastmod>2017-01-23T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://gpestana.com/tags/consensus/</loc>
-    <lastmod>2015-07-10T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://gpestana.com/tags/data-pipeline/</loc>
-    <lastmod>2018-01-15T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://gpestana.com/tags/devops/</loc>
-    <lastmod>2018-07-17T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://gpestana.com/tags/dht/</loc>
-    <lastmod>2019-04-18T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://gpestana.com/tags/economy/</loc>
-    <lastmod>2018-11-17T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://gpestana.com/tags/ethics/</loc>
-    <lastmod>2017-11-11T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://gpestana.com/</loc>
-    <lastmod>2019-04-18T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://gpestana.com/about/</loc>
-  </url>
-  
-  <url>
-    <loc>https://gpestana.com/tags/kapacitor-unit/</loc>
-    <lastmod>2017-01-23T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://gpestana.com/tags/microservices/</loc>
-    <lastmod>2017-11-23T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://gpestana.com/tags/p2p/</loc>
-    <lastmod>2019-04-02T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://gpestana.com/tags/p2p/</loc>
-    <lastmod>2019-04-18T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://gpestana.com/post/</loc>
-    <lastmod>2019-04-18T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://gpestana.com/tags/privacy/</loc>
-    <lastmod>2019-04-02T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://gpestana.com/tags/privacy-preserving-networks/</loc>
-    <lastmod>2019-04-18T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://gpestana.com/tags/research/</loc>
-    <lastmod>2019-04-02T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://gpestana.com/tags/security/</loc>
-    <lastmod>2019-01-22T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://gpestana.com/tags/social-network/</loc>
-    <lastmod>2017-11-11T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://gpestana.com/tags/</loc>
-    <lastmod>2018-07-17T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://gpestana.com/tags/talk/</loc>
-    <lastmod>2019-04-02T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://gpestana.com/tags/tor/</loc>
-    <lastmod>2018-04-03T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://gpestana.com/books/</loc>
   </url>
   
   <url>

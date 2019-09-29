@@ -6,10 +6,91 @@
     <description>Recent content in Tags on gpestana</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 17 Jul 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 18 Apr 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://gpestana.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>dht</title>
+      <link>https://gpestana.com/tags/dht/</link>
+      <pubDate>Thu, 18 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://gpestana.com/tags/dht/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>p2p</title>
+      <link>https://gpestana.com/tags/p2p/</link>
+      <pubDate>Thu, 18 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://gpestana.com/tags/p2p/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>privacy-preserving-networks</title>
+      <link>https://gpestana.com/tags/privacy-preserving-networks/</link>
+      <pubDate>Thu, 18 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://gpestana.com/tags/privacy-preserving-networks/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>privacy</title>
+      <link>https://gpestana.com/tags/privacy/</link>
+      <pubDate>Tue, 02 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://gpestana.com/tags/privacy/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>research</title>
+      <link>https://gpestana.com/tags/research/</link>
+      <pubDate>Tue, 02 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://gpestana.com/tags/research/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>talk</title>
+      <link>https://gpestana.com/tags/talk/</link>
+      <pubDate>Tue, 02 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://gpestana.com/tags/talk/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>security</title>
+      <link>https://gpestana.com/tags/security/</link>
+      <pubDate>Tue, 22 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://gpestana.com/tags/security/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>capitalism</title>
+      <link>https://gpestana.com/tags/capitalism/</link>
+      <pubDate>Sat, 17 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://gpestana.com/tags/capitalism/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>economy</title>
+      <link>https://gpestana.com/tags/economy/</link>
+      <pubDate>Sat, 17 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://gpestana.com/tags/economy/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>AWS</title>
@@ -21,7 +102,7 @@
     </item>
     
     <item>
-      <title>Best-practices</title>
+      <title>best-practices</title>
       <link>https://gpestana.com/tags/best-practices/</link>
       <pubDate>Tue, 17 Jul 2018 00:00:00 +0000</pubDate>
       
@@ -30,43 +111,7 @@
     </item>
     
     <item>
-      <title>Capitalism</title>
-      <link>https://gpestana.com/tags/capitalism/</link>
-      <pubDate>Sat, 17 Nov 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://gpestana.com/tags/capitalism/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Code</title>
-      <link>https://gpestana.com/tags/code/</link>
-      <pubDate>Mon, 23 Jan 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://gpestana.com/tags/code/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Consensus</title>
-      <link>https://gpestana.com/tags/consensus/</link>
-      <pubDate>Fri, 10 Jul 2015 00:00:00 +0000</pubDate>
-      
-      <guid>https://gpestana.com/tags/consensus/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Data-pipeline</title>
-      <link>https://gpestana.com/tags/data-pipeline/</link>
-      <pubDate>Mon, 15 Jan 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://gpestana.com/tags/data-pipeline/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Devops</title>
+      <title>devops</title>
       <link>https://gpestana.com/tags/devops/</link>
       <pubDate>Tue, 17 Jul 2018 00:00:00 +0000</pubDate>
       
@@ -75,43 +120,25 @@
     </item>
     
     <item>
-      <title>Dht</title>
-      <link>https://gpestana.com/tags/dht/</link>
-      <pubDate>Thu, 18 Apr 2019 00:00:00 +0000</pubDate>
+      <title>tor</title>
+      <link>https://gpestana.com/tags/tor/</link>
+      <pubDate>Tue, 03 Apr 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://gpestana.com/tags/dht/</guid>
+      <guid>https://gpestana.com/tags/tor/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Economy</title>
-      <link>https://gpestana.com/tags/economy/</link>
-      <pubDate>Sat, 17 Nov 2018 00:00:00 +0000</pubDate>
+      <title>data-pipeline</title>
+      <link>https://gpestana.com/tags/data-pipeline/</link>
+      <pubDate>Mon, 15 Jan 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://gpestana.com/tags/economy/</guid>
+      <guid>https://gpestana.com/tags/data-pipeline/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Ethics</title>
-      <link>https://gpestana.com/tags/ethics/</link>
-      <pubDate>Sat, 11 Nov 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://gpestana.com/tags/ethics/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Kapacitor-unit</title>
-      <link>https://gpestana.com/tags/kapacitor-unit/</link>
-      <pubDate>Mon, 23 Jan 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://gpestana.com/tags/kapacitor-unit/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Microservices</title>
+      <title>microservices</title>
       <link>https://gpestana.com/tags/microservices/</link>
       <pubDate>Thu, 23 Nov 2017 00:00:00 +0000</pubDate>
       
@@ -120,61 +147,16 @@
     </item>
     
     <item>
-      <title>P2P</title>
-      <link>https://gpestana.com/tags/p2p/</link>
-      <pubDate>Tue, 02 Apr 2019 00:00:00 +0000</pubDate>
+      <title>ethics</title>
+      <link>https://gpestana.com/tags/ethics/</link>
+      <pubDate>Sat, 11 Nov 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://gpestana.com/tags/p2p/</guid>
+      <guid>https://gpestana.com/tags/ethics/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>P2p</title>
-      <link>https://gpestana.com/tags/p2p/</link>
-      <pubDate>Thu, 18 Apr 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://gpestana.com/tags/p2p/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Privacy</title>
-      <link>https://gpestana.com/tags/privacy/</link>
-      <pubDate>Tue, 02 Apr 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://gpestana.com/tags/privacy/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Privacy-preserving-networks</title>
-      <link>https://gpestana.com/tags/privacy-preserving-networks/</link>
-      <pubDate>Thu, 18 Apr 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://gpestana.com/tags/privacy-preserving-networks/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Research</title>
-      <link>https://gpestana.com/tags/research/</link>
-      <pubDate>Tue, 02 Apr 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://gpestana.com/tags/research/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Security</title>
-      <link>https://gpestana.com/tags/security/</link>
-      <pubDate>Tue, 22 Jan 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://gpestana.com/tags/security/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Social-network</title>
+      <title>social-network</title>
       <link>https://gpestana.com/tags/social-network/</link>
       <pubDate>Sat, 11 Nov 2017 00:00:00 +0000</pubDate>
       
@@ -183,20 +165,29 @@
     </item>
     
     <item>
-      <title>Talk</title>
-      <link>https://gpestana.com/tags/talk/</link>
-      <pubDate>Tue, 02 Apr 2019 00:00:00 +0000</pubDate>
+      <title>code</title>
+      <link>https://gpestana.com/tags/code/</link>
+      <pubDate>Mon, 23 Jan 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://gpestana.com/tags/talk/</guid>
+      <guid>https://gpestana.com/tags/code/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Tor</title>
-      <link>https://gpestana.com/tags/tor/</link>
-      <pubDate>Tue, 03 Apr 2018 00:00:00 +0000</pubDate>
+      <title>kapacitor-unit</title>
+      <link>https://gpestana.com/tags/kapacitor-unit/</link>
+      <pubDate>Mon, 23 Jan 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://gpestana.com/tags/tor/</guid>
+      <guid>https://gpestana.com/tags/kapacitor-unit/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>consensus</title>
+      <link>https://gpestana.com/tags/consensus/</link>
+      <pubDate>Fri, 10 Jul 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://gpestana.com/tags/consensus/</guid>
       <description></description>
     </item>
     
