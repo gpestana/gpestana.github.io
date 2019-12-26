@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Coin Flipping Request Delegation | gpestana</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/fonts.css" />
+
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-50045633-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+       function gtag(){dataLayer.push(arguments);}
+       gtag('js', new Date());
+       gtag('config', 'UA-50045633-1');
+     </script>
+
+</head>
+
+  <body>
+    <br/>
+
+<div class="article-meta">
+<h1><span class="title">Discv5 Protocol - Technical Comments</span></h1>
+
+<p class="terms">
+  
+  Tags: <a href="/tags/p2p">p2p</a> <a href="/tags/dht">dht</a> <a href="/tags/privacy-preserving-networks">privacy-preserving-networks</a> 
+  
+</p>
+</div>
+
+<main>
+
+<p><i>This is an unfinished draft. The content may change considerably in thenear future!</i></p>
+
+<p><i>This blog post is part of a series of articles with technical opinions and reviews about security, cryptographic protocols and P2P technology published online which I happen to find interesting.</i></p>
+
+<p><b>What</b> This document outlines the rationale behind the technical decision of discv5 - the network layer for the Ethereum 2.0 network which is meant to replace discv4. It focuses on requirements, vulnerabilities and solutions. One of Discv5’s goals is to improve on the Kademlia implementation flaws, such as network fragmentation. The protocol should also obfuscate the traffic, making it harder to perform system analysis and timing attacks trivially. Polluting the routine tables (through active attacks and/or implementation errors) seems to be one main concern, along with replay attacks (e.g. of NODES and PONGS messages). In short, the attack vectors are active routing table pollution, Sybil attacks and replay attacks.</p>
+
+<p><b>UDP</b> is used to make it easier to perform NAT hole-punching and NAT traversal. As opposed to IPFS, which relies on libp2p which is multiprotocol by design, discv5 only supports UDP transport. The reasoning is to maximize the communication success between peers and simplicity. In addition, other advantages are shot-and-fire and low overhead of UDP. 
+Comments: Implementation simplicity in an advantage and discv5 is well defined protocol and not a networking library that needs to be flexible to be competitive. Thus, using only UDP is a good decision in this context.</p>
+
+<p><b>Kademlia</b> is used because of its simplicity, while providing an overlay network that scales with the number of participants and that supports peer discovery across the whole network.</p>
+
+<b>More to read</b>
+
+<a href="https://github.com/ethereum/devp2p/tree/master/discv5">Main repo for specs and documentation</a>
+<a href="https://github.com/ethereum/devp2p/blob/master/discv5/discv5-wire.md">Specs</a>
+
+</main>
+
+    <footer>
+      
+<script async src="//yihui.name/js/center-img.js"></script>
+
+      
+    </footer>
+  </body>
+</html>
+

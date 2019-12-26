@@ -29,6 +29,10 @@ output:
   padding: 5px;
 }
 
+li {
+  list-style-type: none;
+}
+
 .terms { font-size: .9em; }
 .menu, .article-meta, footer { text-align: center; }
 .title { font-size: .9em; }
@@ -72,6 +76,16 @@ header ol {
 }
 header nav {
     padding: 0 0.5rem
+}
+
+ul {
+  padding-left: 3px;
+}
+
+#blog-menu li {
+  font-family: 'Verdana', sans-serif;
+  font-size: 1.01rem;
+  padding-top: 1.01rem;
 }
 
 header a {
