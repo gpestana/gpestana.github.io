@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: gpestana.com
+Token: b0e39c3d913cddb21d8b7edca8209beb6b94d7f364ddbaadb0da108524b99ea6
