@@ -1,15 +1,33 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Security on gpestana</title>
+    <title>security on gpestana</title>
     <link>https://gpestana.com/tags/security/</link>
-    <description>Recent content in Security on gpestana</description>
+    <description>Recent content in security on gpestana</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 03 Apr 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 22 Jan 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://gpestana.com/tags/security/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Privacy preserving engineering</title>
+      <link>https://gpestana.com/blog/privacy-preserving-engineering/</link>
+      <pubDate>Tue, 22 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://gpestana.com/blog/privacy-preserving-engineering/</guid>
+      <description>One thing that is interesting about P2P and decentralised networks is that they tend to the &amp;ldquo;property extreme&amp;rdquo; (!lacking of a better name..). Consider, for example, scalability. P2P networks have better potential to scale compared to centralised (and distributed) client-server systems. That potential comes from the fact that network users can contribute with resources for the network to function, resulting on very interesting and self-sustained ecosystem in which scalability is elastic and self-regulated.</description>
+    </item>
+    
+    <item>
+      <title>In Pursuit of Private DHTs</title>
+      <link>https://gpestana.com/blog/in-pursuit-of-private-dhts/</link>
+      <pubDate>Mon, 01 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://gpestana.com/blog/in-pursuit-of-private-dhts/</guid>
+      <description>Services based on P2P and decentralized networks are reaching mass adoption (e.g. Bitcoin, Ethereum, IPFS, Dat). People are calling this new wave of distributed and decentralized systems the Web 3.0. Many of these services and networks rely heavily on Distributed Hash Tables (DHTs) - e.g. IPFS, bittorrent - or use it as an important building block (e.g. Ethereum). It is expected that DHTs will be an important building block for many networks and services for the Web 3.</description>
+    </item>
     
     <item>
       <title>Why everyone should be using Tor</title>

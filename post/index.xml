@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on gpestana</title>
@@ -94,7 +94,8 @@ When I tell friends and non so technical people that they should be accessing th
       <pubDate>Mon, 15 Jan 2018 00:00:00 +0000</pubDate>
       
       <guid>https://gpestana.com/blog/store-data-smart/</guid>
-      <description>&amp;gt; This post is part of the series &amp;ldquo;The Zen of Data Pipelines&amp;rdquo; which explores how to build scalable and robust data systems. Most of the ideas and best practices described in this series were learned while implementing and maintaining a large scale data pipeline at F-Secure for the Rapid Detection Service. You can find more posts of this series in this blog or all series content in Gitbook.</description>
+      <description>&amp;gt; This post is part of the series &amp;ldquo;The Zen of Data Pipelines&amp;rdquo; which explores how to build scalable and robust data systems. Most of the ideas and best practices described in this series were learned while implementing and maintaining a large scale data pipeline at F-Secure for the Rapid Detection Service. You can find more posts of this series in this blog or all series content in Gitbook.
+The last step of any data pipeline is to store the data.</description>
     </item>
     
     <item>
@@ -103,7 +104,8 @@ When I tell friends and non so technical people that they should be accessing th
       <pubDate>Thu, 23 Nov 2017 00:00:00 +0000</pubDate>
       
       <guid>https://gpestana.com/blog/dont-trust-the-data/</guid>
-      <description>&amp;gt; This post is part of the series &amp;ldquo;The Zen of Data Pipelines&amp;rdquo; which explores how to build scalable and robust data systems. Most of the ideas and best practices described in this series were learned while implementing and maintaining a large scale data pipeline at F-Secure for the Rapid Detection Service. You can find more posts of this series in this blog or all series content in Gitbook.</description>
+      <description>&amp;gt; This post is part of the series &amp;ldquo;The Zen of Data Pipelines&amp;rdquo; which explores how to build scalable and robust data systems. Most of the ideas and best practices described in this series were learned while implementing and maintaining a large scale data pipeline at F-Secure for the Rapid Detection Service. You can find more posts of this series in this blog or all series content in Gitbook.
+Data is messy.</description>
     </item>
     
     <item>
@@ -122,7 +124,8 @@ the dopamine shots carefully engineered to hook us up are ethically and morally 
       <pubDate>Fri, 10 Nov 2017 00:00:00 +0000</pubDate>
       
       <guid>https://gpestana.com/blog/multiple-pipelines/</guid>
-      <description>&amp;gt; This post is part of the series &amp;ldquo;The Zen of Data Pipelines&amp;rdquo; which explores how to build scalable and robust data systems. Most of the ideas and best practices described in this series were learned while implementing and maintaining a large scale data pipeline at F-Secure for the Rapid Detection Service. You can find more posts of this series in this blog or all series content in Gitbook.</description>
+      <description>&amp;gt; This post is part of the series &amp;ldquo;The Zen of Data Pipelines&amp;rdquo; which explores how to build scalable and robust data systems. Most of the ideas and best practices described in this series were learned while implementing and maintaining a large scale data pipeline at F-Secure for the Rapid Detection Service. You can find more posts of this series in this blog or all series content in Gitbook.
+The pipeline image is a great way to abstract a system where input data is received, processed and stored.</description>
     </item>
     
     <item>
@@ -131,7 +134,8 @@ the dopamine shots carefully engineered to hook us up are ethically and morally 
       <pubDate>Sat, 28 Oct 2017 00:00:00 +0000</pubDate>
       
       <guid>https://gpestana.com/blog/data-microservices/</guid>
-      <description>&amp;gt; This post is part of the series &amp;ldquo;The Zen of Data Pipelines&amp;rdquo; which explores how to build scalable and robust data systems. Most of the ideas and best practices described in this series were learned while implementing and maintaining a large scale data pipeline at F-Secure for the Rapid Detection Service. You can find more posts of this series in this blog or all series content in Gitbook.</description>
+      <description>&amp;gt; This post is part of the series &amp;ldquo;The Zen of Data Pipelines&amp;rdquo; which explores how to build scalable and robust data systems. Most of the ideas and best practices described in this series were learned while implementing and maintaining a large scale data pipeline at F-Secure for the Rapid Detection Service. You can find more posts of this series in this blog or all series content in Gitbook.
+The whole idea of microservices makes a lot of sense on a highly scalable data pipeline.</description>
     </item>
     
     <item>
@@ -140,8 +144,7 @@ the dopamine shots carefully engineered to hook us up are ethically and morally 
       <pubDate>Wed, 01 Mar 2017 00:00:00 +0000</pubDate>
       
       <guid>https://gpestana.com/blog/managing-production-credentials/</guid>
-      <description>Every software must deal and manage credentials at some point. I will define credentials in the context of this article as secrets that must be protected at all costs, under risk of seriously compromising the security of production systems. There are several points to have in mind when managing credentials of productions systems:
-Credentials storage should be kept secret by encryption and a strong access management. Credentials must never be transported but stored.</description>
+      <description></description>
     </item>
     
     <item>
@@ -150,7 +153,7 @@ Credentials storage should be kept secret by encryption and a strong access mana
       <pubDate>Mon, 23 Jan 2017 00:00:00 +0000</pubDate>
       
       <guid>https://gpestana.com/blog/kapacitor-unit/</guid>
-      <description>This post discusses ideas for a proof of concept for a unit test framework for Kapacitor&amp;rsquo;s TICKscripts and alerts. If you are not familiar with Kapacitor and the TICK script I really suggest you to go ahead and check InfluxData&amp;rsquo;s website and learn more about it! In short, the TICK stack is a time series data platform that allows you to easily store, analyse and act on time series data at scale.</description>
+      <description>This post discusses ideas for a proof of concept for a unit test framework for Kapacitor’s TICKscripts and alerts. If you are not familiar with Kapacitor and the TICK script I really suggest you to go ahead and check InfluxData’s websiteand learn more about it! In short, the TICK stack is a time series data platform that allows you to easily store, analyse and act on time series data at scale.</description>
     </item>
     
     <item>
@@ -159,8 +162,7 @@ Credentials storage should be kept secret by encryption and a strong access mana
       <pubDate>Fri, 10 Jul 2015 00:00:00 +0000</pubDate>
       
       <guid>https://gpestana.com/blog/consensus-manager-js/</guid>
-      <description>In one of my side-project - which uses socket.io - I need to reach a consensus amongst users in the same room. Initial requirements:
- The definition of &amp;lsquo;consensus&amp;rsquo; should be flexible and interchangeable in run-time; The time to reach the consensus should be tracked; The final consensus amongst the clients could possibly output some data that the server may need to use further on;  My solution consists of a modular entity which I pompously called consensus manager.</description>
+      <description></description>
     </item>
     
   </channel>

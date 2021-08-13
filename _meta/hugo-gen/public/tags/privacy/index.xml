@@ -1,15 +1,44 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Privacy on gpestana</title>
+    <title>privacy on gpestana</title>
     <link>https://gpestana.com/tags/privacy/</link>
-    <description>Recent content in Privacy on gpestana</description>
+    <description>Recent content in privacy on gpestana</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 03 Apr 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 18 Apr 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://gpestana.com/tags/privacy/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Everyone is naked: Privacy in P2P networks</title>
+      <link>https://gpestana.com/blog/p2p-everyone-is-naked/</link>
+      <pubDate>Tue, 02 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://gpestana.com/blog/p2p-everyone-is-naked/</guid>
+      <description>The ethos of the P2P community and the decentralized web is based on a new paradigm where people and communities can interoperate and collaborate without the need for external stewardship. This new paradigm opens doors for user self-sovereignty, personal data ownership and freedom from central authorities which incentives tend to lock-in their users and to hold and monetize private data in order to maximize their profits. However, P2P and decentralized protocols are complex and collaboration between multiple parties often leaks metadata that can be used to target individuals and communities.</description>
+    </item>
+    
+    <item>
+      <title>P2P privacy vulnerabilities - the DHT case</title>
+      <link>https://gpestana.com/blog/p2p-privacy-vulnerabilities/</link>
+      <pubDate>Sat, 17 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://gpestana.com/blog/p2p-privacy-vulnerabilities/</guid>
+      <description>DHT lookups are extremely vulnerable to attacks on the lookup mechanism (both active and passive)
+(castro et al)
+ castro et al buddy mechanism onion routing lnd  </description>
+    </item>
+    
+    <item>
+      <title>In Pursuit of Private DHTs</title>
+      <link>https://gpestana.com/blog/in-pursuit-of-private-dhts/</link>
+      <pubDate>Mon, 01 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://gpestana.com/blog/in-pursuit-of-private-dhts/</guid>
+      <description>Services based on P2P and decentralized networks are reaching mass adoption (e.g. Bitcoin, Ethereum, IPFS, Dat). People are calling this new wave of distributed and decentralized systems the Web 3.0. Many of these services and networks rely heavily on Distributed Hash Tables (DHTs) - e.g. IPFS, bittorrent - or use it as an important building block (e.g. Ethereum). It is expected that DHTs will be an important building block for many networks and services for the Web 3.</description>
+    </item>
     
     <item>
       <title>Why everyone should be using Tor</title>

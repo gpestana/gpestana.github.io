@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>microservices on gpestana</title>
@@ -17,7 +17,8 @@
       <pubDate>Thu, 23 Nov 2017 00:00:00 +0000</pubDate>
       
       <guid>https://gpestana.com/blog/dont-trust-the-data/</guid>
-      <description>&amp;gt; This post is part of the series &amp;ldquo;The Zen of Data Pipelines&amp;rdquo; which explores how to build scalable and robust data systems. Most of the ideas and best practices described in this series were learned while implementing and maintaining a large scale data pipeline at F-Secure for the Rapid Detection Service. You can find more posts of this series in this blog or all series content in Gitbook.</description>
+      <description>&amp;gt; This post is part of the series &amp;ldquo;The Zen of Data Pipelines&amp;rdquo; which explores how to build scalable and robust data systems. Most of the ideas and best practices described in this series were learned while implementing and maintaining a large scale data pipeline at F-Secure for the Rapid Detection Service. You can find more posts of this series in this blog or all series content in Gitbook.
+Data is messy.</description>
     </item>
     
   </channel>

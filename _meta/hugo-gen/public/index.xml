@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Home on gpestana</title>
@@ -6,10 +6,77 @@
     <description>Recent content in Home on gpestana</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 03 Apr 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 18 Apr 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://gpestana.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Coin Flipping Request Delegation</title>
+      <link>https://gpestana.com/blog/coin-flipping-request-delegation/</link>
+      <pubDate>Thu, 18 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://gpestana.com/blog/coin-flipping-request-delegation/</guid>
+      <description>The goal of Coin Flipping Request Delegation (CFRD) is to add plausible deniability of routing and lookup requests in P2P networks, with special emphasis on DHT networks. The CFRD lookup protocol works by probabilistically creating a new lookup from a received routing request.
+CFRD in Kademlia DHT In a Kademlia lookup request (as defined by these specs), the lookup initiator creates an ordered shortlist containing k peers closest to the ID of the contentID requested.</description>
+    </item>
+    
+    <item>
+      <title>Everyone is naked: Privacy in P2P networks</title>
+      <link>https://gpestana.com/blog/p2p-everyone-is-naked/</link>
+      <pubDate>Tue, 02 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://gpestana.com/blog/p2p-everyone-is-naked/</guid>
+      <description>The ethos of the P2P community and the decentralized web is based on a new paradigm where people and communities can interoperate and collaborate without the need for external stewardship. This new paradigm opens doors for user self-sovereignty, personal data ownership and freedom from central authorities which incentives tend to lock-in their users and to hold and monetize private data in order to maximize their profits. However, P2P and decentralized protocols are complex and collaboration between multiple parties often leaks metadata that can be used to target individuals and communities.</description>
+    </item>
+    
+    <item>
+      <title>Privacy preserving engineering</title>
+      <link>https://gpestana.com/blog/privacy-preserving-engineering/</link>
+      <pubDate>Tue, 22 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://gpestana.com/blog/privacy-preserving-engineering/</guid>
+      <description>One thing that is interesting about P2P and decentralised networks is that they tend to the &amp;ldquo;property extreme&amp;rdquo; (!lacking of a better name..). Consider, for example, scalability. P2P networks have better potential to scale compared to centralised (and distributed) client-server systems. That potential comes from the fact that network users can contribute with resources for the network to function, resulting on very interesting and self-sustained ecosystem in which scalability is elastic and self-regulated.</description>
+    </item>
+    
+    <item>
+      <title>Capital</title>
+      <link>https://gpestana.com/blog/capital/</link>
+      <pubDate>Sat, 17 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://gpestana.com/blog/capital/</guid>
+      <description>I cherish moments when I stumble upon people who get their mental model of the world across fluently and with clarity. These people often challenge or reinforce my personal ideas and always influence me somehow. Recently I&amp;rsquo;ve listened to a podcast episode hosted by Russel Brand, where Yanis Varoufakis was the guest and personally I found the conversation full of interesting insights. Their discussion jumped from topics like the state of Europe to the times of Varoufakis as Greek finance minister, the degeneration of capitalism and its institutions, how commodification and alienation of our society and values are turning us into miserable people, detached from humanity and raw material that keeps the current system of capital accumulation alive.</description>
+    </item>
+    
+    <item>
+      <title>P2P privacy vulnerabilities - the DHT case</title>
+      <link>https://gpestana.com/blog/p2p-privacy-vulnerabilities/</link>
+      <pubDate>Sat, 17 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://gpestana.com/blog/p2p-privacy-vulnerabilities/</guid>
+      <description>DHT lookups are extremely vulnerable to attacks on the lookup mechanism (both active and passive)
+(castro et al)
+ castro et al buddy mechanism onion routing lnd  </description>
+    </item>
+    
+    <item>
+      <title>In Pursuit of Private DHTs</title>
+      <link>https://gpestana.com/blog/in-pursuit-of-private-dhts/</link>
+      <pubDate>Mon, 01 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://gpestana.com/blog/in-pursuit-of-private-dhts/</guid>
+      <description>Services based on P2P and decentralized networks are reaching mass adoption (e.g. Bitcoin, Ethereum, IPFS, Dat). People are calling this new wave of distributed and decentralized systems the Web 3.0. Many of these services and networks rely heavily on Distributed Hash Tables (DHTs) - e.g. IPFS, bittorrent - or use it as an important building block (e.g. Ethereum). It is expected that DHTs will be an important building block for many networks and services for the Web 3.</description>
+    </item>
+    
+    <item>
+      <title>Notes on AWS ECS configuration and secret management done right</title>
+      <link>https://gpestana.com/blog/aws-conf-management/</link>
+      <pubDate>Tue, 17 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://gpestana.com/blog/aws-conf-management/</guid>
+      <description>Best practices for managing secrets and configurations in ECS containers:
+Requirements:  configurations and secrets stored in paramter store and/or S3 bucket; encrypt secrets; do not push configurations to git/version control system; transparent to apps (e.g. it should be completely transparent for backend; it should not have code for pulling configurations/secrets from anywhere) this follows the 12 factor app style (https://12factor.net/); automatic reloads new configurations when these change upstream;  envaws (https://github.</description>
+    </item>
     
     <item>
       <title>Why everyone should be using Tor</title>
@@ -27,7 +94,8 @@ When I tell friends and non so technical people that they should be accessing th
       <pubDate>Mon, 15 Jan 2018 00:00:00 +0000</pubDate>
       
       <guid>https://gpestana.com/blog/store-data-smart/</guid>
-      <description>&amp;gt; This post is part of the series &amp;ldquo;The Zen of Data Pipelines&amp;rdquo; which explores how to build scalable and robust data systems. Most of the ideas and best practices described in this series were learned while implementing and maintaining a large scale data pipeline at F-Secure for the Rapid Detection Service. You can find more posts of this series in this blog or all series content in Gitbook.</description>
+      <description>&amp;gt; This post is part of the series &amp;ldquo;The Zen of Data Pipelines&amp;rdquo; which explores how to build scalable and robust data systems. Most of the ideas and best practices described in this series were learned while implementing and maintaining a large scale data pipeline at F-Secure for the Rapid Detection Service. You can find more posts of this series in this blog or all series content in Gitbook.
+The last step of any data pipeline is to store the data.</description>
     </item>
     
     <item>
@@ -36,7 +104,8 @@ When I tell friends and non so technical people that they should be accessing th
       <pubDate>Thu, 23 Nov 2017 00:00:00 +0000</pubDate>
       
       <guid>https://gpestana.com/blog/dont-trust-the-data/</guid>
-      <description>&amp;gt; This post is part of the series &amp;ldquo;The Zen of Data Pipelines&amp;rdquo; which explores how to build scalable and robust data systems. Most of the ideas and best practices described in this series were learned while implementing and maintaining a large scale data pipeline at F-Secure for the Rapid Detection Service. You can find more posts of this series in this blog or all series content in Gitbook.</description>
+      <description>&amp;gt; This post is part of the series &amp;ldquo;The Zen of Data Pipelines&amp;rdquo; which explores how to build scalable and robust data systems. Most of the ideas and best practices described in this series were learned while implementing and maintaining a large scale data pipeline at F-Secure for the Rapid Detection Service. You can find more posts of this series in this blog or all series content in Gitbook.
+Data is messy.</description>
     </item>
     
     <item>
@@ -55,7 +124,8 @@ the dopamine shots carefully engineered to hook us up are ethically and morally 
       <pubDate>Fri, 10 Nov 2017 00:00:00 +0000</pubDate>
       
       <guid>https://gpestana.com/blog/multiple-pipelines/</guid>
-      <description>&amp;gt; This post is part of the series &amp;ldquo;The Zen of Data Pipelines&amp;rdquo; which explores how to build scalable and robust data systems. Most of the ideas and best practices described in this series were learned while implementing and maintaining a large scale data pipeline at F-Secure for the Rapid Detection Service. You can find more posts of this series in this blog or all series content in Gitbook.</description>
+      <description>&amp;gt; This post is part of the series &amp;ldquo;The Zen of Data Pipelines&amp;rdquo; which explores how to build scalable and robust data systems. Most of the ideas and best practices described in this series were learned while implementing and maintaining a large scale data pipeline at F-Secure for the Rapid Detection Service. You can find more posts of this series in this blog or all series content in Gitbook.
+The pipeline image is a great way to abstract a system where input data is received, processed and stored.</description>
     </item>
     
     <item>
@@ -64,17 +134,17 @@ the dopamine shots carefully engineered to hook us up are ethically and morally 
       <pubDate>Sat, 28 Oct 2017 00:00:00 +0000</pubDate>
       
       <guid>https://gpestana.com/blog/data-microservices/</guid>
-      <description>&amp;gt; This post is part of the series &amp;ldquo;The Zen of Data Pipelines&amp;rdquo; which explores how to build scalable and robust data systems. Most of the ideas and best practices described in this series were learned while implementing and maintaining a large scale data pipeline at F-Secure for the Rapid Detection Service. You can find more posts of this series in this blog or all series content in Gitbook.</description>
+      <description>&amp;gt; This post is part of the series &amp;ldquo;The Zen of Data Pipelines&amp;rdquo; which explores how to build scalable and robust data systems. Most of the ideas and best practices described in this series were learned while implementing and maintaining a large scale data pipeline at F-Secure for the Rapid Detection Service. You can find more posts of this series in this blog or all series content in Gitbook.
+The whole idea of microservices makes a lot of sense on a highly scalable data pipeline.</description>
     </item>
     
     <item>
       <title>Managing credentials in production</title>
       <link>https://gpestana.com/blog/managing-production-credentials/</link>
-      <pubDate>Sun, 20 Aug 2017 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 01 Mar 2017 00:00:00 +0000</pubDate>
       
       <guid>https://gpestana.com/blog/managing-production-credentials/</guid>
-      <description>Every software must deal and manage credentials at some point. I will define credentials in the context of this article as secrets that must be protected at all costs, under risk of seriously compromising the security of production systems. There are several points to have in mind when managing credentials of productions systems:
-Credentials storage should be kept secret by encryption and a strong access management. Credentials must never be transported but stored.</description>
+      <description></description>
     </item>
     
     <item>
@@ -83,7 +153,7 @@ Credentials storage should be kept secret by encryption and a strong access mana
       <pubDate>Mon, 23 Jan 2017 00:00:00 +0000</pubDate>
       
       <guid>https://gpestana.com/blog/kapacitor-unit/</guid>
-      <description>This post discusses ideas for a proof of concept for a unit test framework for Kapacitor&amp;rsquo;s TICKscripts and alerts. If you are not familiar with Kapacitor and the TICK script I really suggest you to go ahead and check InfluxData&amp;rsquo;s website and learn more about it! In short, the TICK stack is a time series data platform that allows you to easily store, analyse and act on time series data at scale.</description>
+      <description>This post discusses ideas for a proof of concept for a unit test framework for Kapacitor’s TICKscripts and alerts. If you are not familiar with Kapacitor and the TICK script I really suggest you to go ahead and check InfluxData’s websiteand learn more about it! In short, the TICK stack is a time series data platform that allows you to easily store, analyse and act on time series data at scale.</description>
     </item>
     
     <item>
@@ -92,8 +162,7 @@ Credentials storage should be kept secret by encryption and a strong access mana
       <pubDate>Fri, 10 Jul 2015 00:00:00 +0000</pubDate>
       
       <guid>https://gpestana.com/blog/consensus-manager-js/</guid>
-      <description>In one of my side-project - which uses socket.io - I need to reach a consensus amongst users in the same room. Initial requirements:
- The definition of &amp;lsquo;consensus&amp;rsquo; should be flexible and interchangeable in run-time; The time to reach the consensus should be tracked; The final consensus amongst the clients could possibly output some data that the server may need to use further on;  My solution consists of a modular entity which I pompously called consensus manager.</description>
+      <description></description>
     </item>
     
   </channel>

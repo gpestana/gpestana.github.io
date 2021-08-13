@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
@@ -28,6 +28,11 @@
   </url>
   
   <url>
+    <loc>https://gpestana.com/tags/privacy/</loc>
+    <lastmod>2019-04-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://gpestana.com/tags/privacy-preserving-networks/</loc>
     <lastmod>2019-04-18T00:00:00+00:00</lastmod>
   </url>
@@ -39,11 +44,6 @@
   
   <url>
     <loc>https://gpestana.com/blog/p2p-everyone-is-naked/</loc>
-    <lastmod>2019-04-02T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://gpestana.com/tags/privacy/</loc>
     <lastmod>2019-04-02T00:00:00+00:00</lastmod>
   </url>
   

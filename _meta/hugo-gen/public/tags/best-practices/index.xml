@@ -1,15 +1,25 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Best-practices on gpestana</title>
+    <title>best-practices on gpestana</title>
     <link>https://gpestana.com/tags/best-practices/</link>
-    <description>Recent content in Best-practices on gpestana</description>
+    <description>Recent content in best-practices on gpestana</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 15 Jan 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 17 Jul 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://gpestana.com/tags/best-practices/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Notes on AWS ECS configuration and secret management done right</title>
+      <link>https://gpestana.com/blog/aws-conf-management/</link>
+      <pubDate>Tue, 17 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://gpestana.com/blog/aws-conf-management/</guid>
+      <description>Best practices for managing secrets and configurations in ECS containers:
+Requirements:  configurations and secrets stored in paramter store and/or S3 bucket; encrypt secrets; do not push configurations to git/version control system; transparent to apps (e.g. it should be completely transparent for backend; it should not have code for pulling configurations/secrets from anywhere) this follows the 12 factor app style (https://12factor.net/); automatic reloads new configurations when these change upstream;  envaws (https://github.</description>
+    </item>
     
     <item>
       <title>Store the data the smart way</title>
@@ -17,7 +27,8 @@
       <pubDate>Mon, 15 Jan 2018 00:00:00 +0000</pubDate>
       
       <guid>https://gpestana.com/blog/store-data-smart/</guid>
-      <description>&amp;gt; This post is part of the series &amp;ldquo;The Zen of Data Pipelines&amp;rdquo; which explores how to build scalable and robust data systems. Most of the ideas and best practices described in this series were learned while implementing and maintaining a large scale data pipeline at F-Secure for the Rapid Detection Service. You can find more posts of this series in this blog or all series content in Gitbook.</description>
+      <description>&amp;gt; This post is part of the series &amp;ldquo;The Zen of Data Pipelines&amp;rdquo; which explores how to build scalable and robust data systems. Most of the ideas and best practices described in this series were learned while implementing and maintaining a large scale data pipeline at F-Secure for the Rapid Detection Service. You can find more posts of this series in this blog or all series content in Gitbook.
+The last step of any data pipeline is to store the data.</description>
     </item>
     
     <item>
@@ -26,7 +37,8 @@
       <pubDate>Thu, 23 Nov 2017 00:00:00 +0000</pubDate>
       
       <guid>https://gpestana.com/blog/dont-trust-the-data/</guid>
-      <description>&amp;gt; This post is part of the series &amp;ldquo;The Zen of Data Pipelines&amp;rdquo; which explores how to build scalable and robust data systems. Most of the ideas and best practices described in this series were learned while implementing and maintaining a large scale data pipeline at F-Secure for the Rapid Detection Service. You can find more posts of this series in this blog or all series content in Gitbook.</description>
+      <description>&amp;gt; This post is part of the series &amp;ldquo;The Zen of Data Pipelines&amp;rdquo; which explores how to build scalable and robust data systems. Most of the ideas and best practices described in this series were learned while implementing and maintaining a large scale data pipeline at F-Secure for the Rapid Detection Service. You can find more posts of this series in this blog or all series content in Gitbook.
+Data is messy.</description>
     </item>
     
     <item>
@@ -35,7 +47,8 @@
       <pubDate>Fri, 10 Nov 2017 00:00:00 +0000</pubDate>
       
       <guid>https://gpestana.com/blog/multiple-pipelines/</guid>
-      <description>&amp;gt; This post is part of the series &amp;ldquo;The Zen of Data Pipelines&amp;rdquo; which explores how to build scalable and robust data systems. Most of the ideas and best practices described in this series were learned while implementing and maintaining a large scale data pipeline at F-Secure for the Rapid Detection Service. You can find more posts of this series in this blog or all series content in Gitbook.</description>
+      <description>&amp;gt; This post is part of the series &amp;ldquo;The Zen of Data Pipelines&amp;rdquo; which explores how to build scalable and robust data systems. Most of the ideas and best practices described in this series were learned while implementing and maintaining a large scale data pipeline at F-Secure for the Rapid Detection Service. You can find more posts of this series in this blog or all series content in Gitbook.
+The pipeline image is a great way to abstract a system where input data is received, processed and stored.</description>
     </item>
     
     <item>
@@ -44,17 +57,17 @@
       <pubDate>Sat, 28 Oct 2017 00:00:00 +0000</pubDate>
       
       <guid>https://gpestana.com/blog/data-microservices/</guid>
-      <description>&amp;gt; This post is part of the series &amp;ldquo;The Zen of Data Pipelines&amp;rdquo; which explores how to build scalable and robust data systems. Most of the ideas and best practices described in this series were learned while implementing and maintaining a large scale data pipeline at F-Secure for the Rapid Detection Service. You can find more posts of this series in this blog or all series content in Gitbook.</description>
+      <description>&amp;gt; This post is part of the series &amp;ldquo;The Zen of Data Pipelines&amp;rdquo; which explores how to build scalable and robust data systems. Most of the ideas and best practices described in this series were learned while implementing and maintaining a large scale data pipeline at F-Secure for the Rapid Detection Service. You can find more posts of this series in this blog or all series content in Gitbook.
+The whole idea of microservices makes a lot of sense on a highly scalable data pipeline.</description>
     </item>
     
     <item>
       <title>Managing credentials in production</title>
       <link>https://gpestana.com/blog/managing-production-credentials/</link>
-      <pubDate>Sun, 20 Aug 2017 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 01 Mar 2017 00:00:00 +0000</pubDate>
       
       <guid>https://gpestana.com/blog/managing-production-credentials/</guid>
-      <description>Every software must deal and manage credentials at some point. I will define credentials in the context of this article as secrets that must be protected at all costs, under risk of seriously compromising the security of production systems. There are several points to have in mind when managing credentials of productions systems:
-Credentials storage should be kept secret by encryption and a strong access management. Credentials must never be transported but stored.</description>
+      <description></description>
     </item>
     
   </channel>

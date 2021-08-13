@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>consensus on gpestana</title>
@@ -17,8 +17,7 @@
       <pubDate>Fri, 10 Jul 2015 00:00:00 +0000</pubDate>
       
       <guid>https://gpestana.com/blog/consensus-manager-js/</guid>
-      <description>In one of my side-project - which uses socket.io - I need to reach a consensus amongst users in the same room. Initial requirements:
- The definition of &amp;lsquo;consensus&amp;rsquo; should be flexible and interchangeable in run-time; The time to reach the consensus should be tracked; The final consensus amongst the clients could possibly output some data that the server may need to use further on;  My solution consists of a modular entity which I pompously called consensus manager.</description>
+      <description></description>
     </item>
     
   </channel>
