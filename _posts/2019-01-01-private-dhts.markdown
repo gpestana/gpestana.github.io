@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "In Pursuit of Private DHTs"
-date:   2017-02-01 13:04:14 +0100
+date:   2018-01-01 13:04:14 +0100
 categories: security privacy dht
 ---
 

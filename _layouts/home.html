@@ -1,0 +1,155 @@
+---
+layout: base
+---
+
+<div class="home">
+  {%- if page.title -%}
+    <h1 class="page-heading">{{ page.title }}</h1>
+  {%- endif -%}
+
+  {{ content }}
+
+  {% comment %} 
+    // articles section
+  {% endcomment %}
+
+  {% assign posts = site.posts %}
+  {%- if posts.size > 0 -%}
+    <br>
+    <h2 id="articles"> articles </h2>
+    <p>For more stuff check my the <a href="">Evergreen notes</a>.</p>
+    <br>
+
+    {%- if page.list_title -%}
+      <h2 class="post-list-heading">{{ page.list_title }}</h2>
+    {%- endif -%}
+    <ul class="post-list">
+      {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+      {%- for post in posts -%}
+      <li>
+        <h3>
+          <a class="post-link" href="{{ post.url | relative_url }}">
+            <span class="post-meta">{{ post.date | date: "%b/%Y" }}</span> {{ post.title | escape }} 
+          </a>
+        </h3>
+        {%- if site.show_excerpts -%}
+          {{ post.excerpt }}
+        {%- endif -%}
+      </li>
+      {%- endfor -%}
+    </ul>
+  {%- endif -%}
+
+  {% comment %} 
+    // Papers and collabs section
+  {% endcomment %}
+  <br>
+  <h2 id="publications"> publications, papers, collabs </h2>
+  <br>
+  
+  <ul class="post-list">
+    <li>
+        <h3>
+          <a class="post-link" href="https://eprint.iacr.org/2023/1063">
+            <span class="post-meta">USENIX (2024) </span> DiStefano: Decentralized Infrastructure for Sharing Trusted Encrypted Facts and Nothing More
+          </a>
+        </h3>
+    </li>
+    <li>
+        <h3>
+          <a class="post-link" href="https://eprint.iacr.org/2022/981.pdf">
+            <span class="post-meta">PETS (2023) </span> FrodoPIR: Simple, Scalable, Single-Server Private Information Retrieval
+          </a>
+        </h3>
+    </li>
+    <li>
+        <h3>
+          <a class="post-link" href="https://arxiv.org/abs/2109.08189">
+            <span class="post-meta">arXiv (2021) </span> PrivateFetch: Scalable Catalog Delivery in Privacy-Preserving Advertising
+          </a>
+        </h3>
+    </li>
+   <li>
+        <h3>
+          <a class="post-link" href="https://arxiv.org/abs/2106.01940">
+            <span class="post-meta">arXiv (2021) </span> THEMIS: A Decentralized Privacy-Preserving Ad Platform with Reporting Integrity
+          </a>
+        </h3>
+    </li>
+    <li>
+        <h3>
+          <a class="post-link" href="https://arxiv.org/abs/1910.00159">
+            <span class="post-meta">arXiv (2019) </span> VPN0: A Privacy-Preserving Decentralized Virtual Private Network
+          </a>
+        </h3>
+    </li>
+    <li>
+        <h3>
+          <a class="post-link" href="https://www.gpestana.com/papers/sbc-ipfs-draft.pdf">
+            <span class="post-meta">2018 </span> SBC-IPFS: A Practical Secure Encryption Broadcast Channel on IPFS (draft)
+          </a>
+        </h3>
+    </li>
+    <li>
+        <h3>
+          <a class="post-link" href="https://www.gpestana.com/papers/everyone-is-naked-rev.pdf">
+            <span class="post-meta">2018 </span> Everyone is naked: Privacy on P2P systems (rev 0.1)
+          </a>
+        </h3>
+    </li>
+    <li>
+        <h3>
+          <a class="post-link" href="https://arxiv.org/abs/1410.3440">
+            <span class="post-meta">2014 </span> Techniques and tools for measuring energy efficiency of scientific software applications
+          </a>
+        </h3>
+    </li>
+
+  {% comment %} 
+    // Talks section
+  {% endcomment %}
+  <br>
+  <h2 id="talks"> talks </h2>
+  <br>
+
+  <ul class="post-list">
+    <li>
+        <h3>
+          <a class="post-link" href="https://www.youtube.com/watch?v=Sl_775xBKFc">
+            <span class="post-meta">Polkadot Decoded (2023) </span> NPoS Impacts, Critiques and Future Potentials in Polkadot
+          </a>
+        </h3>
+    </li>
+    <li>
+        <h3>
+          <a class="post-link" href="https://www.youtube.com/watch?v=9N2bbGvEQjk">
+            <span class="post-meta">TEDxHelsinkiUniversity (2019) </span> How the Internet makes us vulnerable
+          </a>
+        </h3>
+    </li>
+    <li>
+        <h3>
+          <a class="post-link" href="https://www.youtube.com/embed/nCCkwU4JPcY">
+            <span class="post-meta">Data Terra Nemo (2019) </span> Privacy in Peer-to-Peer Networks
+          </a>
+        </h3>
+    </li>
+    <li>
+        <h3>
+          <a class="post-link" href="https://www.youtube.com/embed/lGk6OErtDFY">
+            <span class="post-meta">IPFS Camp (2019) </span> Privacy in P2P networks: DHTs and IPFS 
+          </a>
+        </h3>
+    </li>
+    <li>
+        <h3>
+          <a class="post-link" href="https://www.youtube.com/embed/TRvQzwDyVro">
+            <span class="post-meta">Protocol Labs Journal Club (2018) </span> CRDT JSON Datatype (paper walkthrough) 
+          </a>
+        </h3>
+    </li>
+
+
+  </ul>
+
+</div>
